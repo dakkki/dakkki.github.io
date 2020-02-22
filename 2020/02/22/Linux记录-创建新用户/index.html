@@ -6,21 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>PyMol渲染（Ray） | dakki</title>
+  <title>Linux记录之用户管理 | dakki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Ray命令使用ray将会创建一个现在的框架图像的渲染（ray-traced）图像。我们平常使用pymol的时候可能就是直接ray一下出图，其实ray有许多功能可以挖掘，这里简单介绍一小部分 使用1ray [width,height [,renderer [,angle [,shift ]]]  angle和shift将会生成立体的配对width和height为设置ray的长宽，可以超出现在的框架">
+  <meta name="description" content="​        用户管理操作的细节参数经常忘记，如创建新用户指定home目录以及指定登入shell,删除用户的具体命令，各细节等等，特在此记录。 1 添加新的用户账号 useradd 选项 用户名  参数说明：  选项:  -c comment 指定一段注释性描述。 -d 目录 指定用户主目录，如果此目录不存在，则同时使用-m选项，可以创建主目录。 -g 用户组 指定用户所属的用户组。 -G 用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PyMol渲染（Ray）">
-<meta property="og:url" content="http://yoursite.com/2020/02/21/PyMol%E6%B8%B2%E6%9F%93%EF%BC%88Ray%EF%BC%89/index.html">
+<meta property="og:title" content="Linux记录之用户管理">
+<meta property="og:url" content="http://yoursite.com/2020/02/22/Linux%E8%AE%B0%E5%BD%95-%E5%88%9B%E5%BB%BA%E6%96%B0%E7%94%A8%E6%88%B7/index.html">
 <meta property="og:site_name" content="dakki">
-<meta property="og:description" content="Ray命令使用ray将会创建一个现在的框架图像的渲染（ray-traced）图像。我们平常使用pymol的时候可能就是直接ray一下出图，其实ray有许多功能可以挖掘，这里简单介绍一小部分 使用1ray [width,height [,renderer [,angle [,shift ]]]  angle和shift将会生成立体的配对width和height为设置ray的长宽，可以超出现在的框架">
-<meta property="og:image" content="http://yoursite.com/images/PyMol.png">
-<meta property="article:published_time" content="2020-02-21T08:43:05.222Z">
-<meta property="article:modified_time" content="2020-02-21T07:48:23.936Z">
+<meta property="og:description" content="​        用户管理操作的细节参数经常忘记，如创建新用户指定home目录以及指定登入shell,删除用户的具体命令，各细节等等，特在此记录。 1 添加新的用户账号 useradd 选项 用户名  参数说明：  选项:  -c comment 指定一段注释性描述。 -d 目录 指定用户主目录，如果此目录不存在，则同时使用-m选项，可以创建主目录。 -g 用户组 指定用户所属的用户组。 -G 用">
+<meta property="og:image" content="http://yoursite.com/images/linux.png">
+<meta property="article:published_time" content="2020-02-22T06:34:49.087Z">
+<meta property="article:modified_time" content="2020-02-22T10:50:26.736Z">
 <meta property="article:author" content="dakki">
-<meta property="article:tag" content="PyMol">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/PyMol.png">
+<meta name="twitter:image" content="http://yoursite.com/images/linux.png">
   
     <link rel="alternative" href="/atom.xml" title="dakki" type="application/atom+xml">
   
@@ -212,20 +212,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-PyMol渲染（Ray）" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Linux记录-创建新用户" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      PyMol渲染（Ray）
+      Linux记录之用户管理
     </h1>
   
 
         
-        <a href="/2020/02/21/PyMol%E6%B8%B2%E6%9F%93%EF%BC%88Ray%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-02-21T08:43:05.222Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
+        <a href="/2020/02/22/Linux%E8%AE%B0%E5%BD%95-%E5%88%9B%E5%BB%BA%E6%96%B0%E7%94%A8%E6%88%B7/" class="archive-article-date">
+  	<time datetime="2020-02-22T06:34:49.087Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-22</time>
 </a>
         
       </header>
@@ -234,23 +234,110 @@
       
 		  
 		  
-  	        <h3 id="Ray命令使用"><a href="#Ray命令使用" class="headerlink" title="Ray命令使用"></a>Ray命令使用</h3><p><strong>ray</strong>将会创建一个现在的框架图像的渲染（ray-traced）图像。我们平常使用pymol的时候可能就是直接ray一下出图，其实ray有许多功能可以挖掘，这里简单介绍一小部分</p>
-<h5 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ray [width,height [,renderer [,angle [,shift ]]]</span><br></pre></td></tr></table></figure>
+  	        <p>​        用户管理操作的细节参数经常忘记，如创建新用户指定home目录以及指定登入shell,删除用户的具体命令，各细节等等，特在此记录。</p>
+<h1 id="1-添加新的用户账号"><a href="#1-添加新的用户账号" class="headerlink" title="1 添加新的用户账号"></a>1 添加新的用户账号</h1><blockquote>
+<p>useradd 选项 用户名</p>
+</blockquote>
+<p>参数说明：</p>
+<ul>
+<li><p>选项:</p>
+<ul>
+<li>-c comment 指定一段注释性描述。</li>
+<li>-d 目录 指定用户主目录，如果此目录不存在，则同时使用-m选项，可以创建主目录。</li>
+<li>-g 用户组 指定用户所属的用户组。</li>
+<li>-G 用户组，用户组 指定用户所属的附加组。</li>
+<li>-s Shell文件 指定用户的登录Shell。</li>
+<li>-u 用户号 指定用户的用户号，如果同时有-o选项，则可以重复使用其他用户的标识号。</li>
+</ul>
+</li>
+<li><p>用户名:</p>
+<p>指定新账号的登录名。</p>
+</li>
+</ul>
+<h2 id="实例1"><a href="#实例1" class="headerlink" title="实例1"></a>实例1</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> useradd –d /home/dakki -m dakki</span></span><br></pre></td></tr></table></figure>
 
-<p><strong>angle</strong>和<strong>shift</strong>将会生成立体的配对<br><strong>width</strong>和<strong>height</strong>为设置ray的长宽，可以超出现在的框架</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#全部使用默认设置</span></span><br><span class="line">ray</span><br></pre></td></tr></table></figure>
+<p>此命令创建了一个用户sam，其中-d和-m选项用来为登录名sam产生一个主目录 /home/dakki（/home为默认的用户主目录所在的父目录）。</p>
+<blockquote>
+<p>-m 很重要，通常 useradd -m dakki 则可默认创建/home/dakki目录</p>
+</blockquote>
+<p>实际创建新用户模板：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Ubuntu 和其它系统</span></span><br><span class="line">useradd -s /bin/bash -m dakki</span><br><span class="line"><span class="comment"># ubuntu以外的其它系统</span></span><br><span class="line">useradd –d /home/dakki -s /bin/bash -m dakki</span><br></pre></td></tr></table></figure>
 
-<h5 id="渲染模式"><a href="#渲染模式" class="headerlink" title="渲染模式"></a>渲染模式</h5><p>设置<strong>Ray_trace_mode</strong>设置可以修改最终成图的时候的PyMOL的内部渲染蛋白的模式.<br>下面可以查看不同模式的效果</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 普通颜色</span></span><br><span class="line"><span class="built_in">set</span> ray_trace_mode, 0</span><br><span class="line"></span><br><span class="line"><span class="comment"># 普通颜色+黑色线</span></span><br><span class="line"><span class="built_in">set</span> ray_trace_mode, 1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 仅包含黑色线</span></span><br><span class="line"><span class="built_in">set</span> ray_trace_mode, 2</span><br><span class="line"></span><br><span class="line"><span class="comment"># 倍色+黑色线</span></span><br><span class="line"><span class="built_in">set</span> ray_trace_mode, 3</span><br><span class="line"></span><br><span class="line"><span class="comment"># 建议设置</span></span><br><span class="line"><span class="built_in">set</span> antialias, 2</span><br><span class="line"></span><br><span class="line"><span class="comment"># 更改线的颜色</span></span><br><span class="line"><span class="built_in">set</span> ray_trace_color, magenta</span><br></pre></td></tr></table></figure>
+<h2 id="实例2"><a href="#实例2" class="headerlink" title="实例2"></a>实例2</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> useradd -s /bin/sh -g group –G adm,root gem</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="透视"><a href="#透视" class="headerlink" title="透视"></a>透视</h3><p>在0.98版本以后，渲染速度得到了提升，选择的开关如下:</p>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">set</span> orthoscopic, off</span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span> orthoscopic, <span class="keyword">on</span></span><br></pre></td></tr></table></figure>
+<p>此命令新建了一个用户gem，该用户的登录Shell是 <code>/bin/sh</code>，它属于group用户组，同时又属于adm和root用户组，其中group用户组是其主组。</p>
+<p>这里可能新建组：#groupadd group及groupadd adm</p>
+<p>增加用户账号就是在/etc/passwd文件中为新用户增加一条记录，同时更新其他系统文件如/etc/shadow, /etc/group等。</p>
+<p>Linux提供了集成的系统管理工具userconf，它可以用来对用户账号进行统一管理。</p>
+<h1 id="2-删除账号"><a href="#2-删除账号" class="headerlink" title="2 删除账号"></a>2 删除账号</h1><p>删除一个已有的用户账号使用<code>userdel</code>命令，其格式如下：</p>
+<blockquote>
+<p>userdel 选项 用户名</p>
+</blockquote>
+<p>常用的选项是 <strong>-r</strong>，它的作用是把用户的主目录一起删除。</p>
+<p>例如：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> userdel -r sam</span></span><br></pre></td></tr></table></figure>
 
-<p>放大近景如下:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> field_of_view, X</span><br></pre></td></tr></table></figure>
+<p>此命令删除用户sam在系统文件中（主要是/etc/passwd, /etc/shadow, /etc/group等）的记录，同时删除用户的主目录。</p>
+<h1 id="3-修改帐号"><a href="#3-修改帐号" class="headerlink" title="3 修改帐号"></a>3 修改帐号</h1><p>修改用户账号就是根据实际情况更改用户的有关属性，如用户号、主目录、用户组、登录Shell等。</p>
+<p>修改已有用户的信息使用<code>usermod</code>命令，其格式如下：</p>
+<blockquote>
+<p>usermod 选项 用户名</p>
+</blockquote>
+<p>常用的选项包括<code>-c, -d, -m, -g, -G, -s, -u以及-o等</code>，这些选项的意义与<code>useradd</code>命令中的选项一样，可以为用户指定新的资源值。</p>
+<p>另外，有些系统可以使用选项：-l 新用户名</p>
+<p>这个选项指定一个新的账号，即将原来的用户名改为新的用户名。</p>
+<p>例如：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> usermod -s /bin/ksh -d /home/z –g developer sam</span></span><br></pre></td></tr></table></figure>
 
-<p>当50&lt;X&lt;70，默认为20.50-70 拥有非常强的透视效果。透视的轴为Y轴，而不是X轴</p>
-<p><img src="../../../../images/PyMol.png" alt="R"></p>
+<p>此命令将用户sam的登录Shell修改为ksh，主目录改为/home/z，用户组改为developer。</p>
+<h1 id="4-用户口令的管理"><a href="#4-用户口令的管理" class="headerlink" title="4 用户口令的管理"></a>4 用户口令的管理</h1><p>用户管理的一项重要内容是用户口令的管理。用户账号刚创建时没有口令，但是被系统锁定，无法使用，必须为其指定口令后才可以使用，即使是指定空口令。</p>
+<p>指定和修改用户口令的Shell命令是<code>passwd</code>。超级用户可以为自己和其他用户指定口令，普通用户只能用它修改自己的口令。命令的格式为：</p>
+<blockquote>
+<p>passwd 选项 用户名</p>
+</blockquote>
+<p>可使用的选项：</p>
+<ul>
+<li>-l 锁定口令，即禁用账号。</li>
+<li>-u 口令解锁。</li>
+<li>-d 使账号无口令。</li>
+<li>-f 强迫用户下次登录时修改口令。</li>
+</ul>
+<p>如果默认用户名，则修改当前用户的口令。</p>
+<p>例如，假设当前用户是sam，则下面的命令修改该用户自己的口令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ passwd </span><br><span class="line">Old password:****** </span><br><span class="line">New password:******* </span><br><span class="line">Re-enter new password:*******</span><br></pre></td></tr></table></figure>
+
+<p>如果是超级用户，可以用下列形式指定任何用户的口令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># passwd sam </span><br><span class="line">New password:******* </span><br><span class="line">Re-enter new password:*******</span><br></pre></td></tr></table></figure>
+
+<p>普通用户修改自己的口令时，passwd命令会先询问原口令，验证后再要求用户输入两遍新口令，如果两次输入的口令一致，则将这个口令指定给用户；而超级用户为用户指定口令时，就不需要知道原口令。</p>
+<p>为了系统安全起见，用户应该选择比较复杂的口令，例如最好使用8位长的口令，口令中包含有大写、小写字母和数字，并且应该与姓名、生日等不相同。</p>
+<p>为用户指定空口令时，执行下列形式的命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> passwd -d sam</span></span><br></pre></td></tr></table></figure>
+
+<p>此命令将用户 sam 的口令删除，这样用户 sam 下一次登录时，系统就不再允许该用户登录了。</p>
+<p>passwd 命令还可以用 -l(lock) 选项锁定某一用户，使其不能登录，例如：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># passwd -l sam</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="5-其它"><a href="#5-其它" class="headerlink" title="5 其它"></a>5 其它</h1><h2 id="5-1-查看-etc-passwd文件"><a href="#5-1-查看-etc-passwd文件" class="headerlink" title="5.1 查看/etc/passwd文件"></a>5.1 查看/etc/passwd文件</h2><p>Linux系统中的每个用户都在/etc/passwd文件中有一个对应的记录行，它记录了这个用户的一些基本属性。</p>
+<p>这个文件对所有用户都是可读的。它的内容类似下面的例子：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">＃ cat /etc/passwd</span><br><span class="line"></span><br><span class="line">root:x:0:0:Superuser:/:</span><br><span class="line">daemon:x:1:1:System daemons:/etc:</span><br><span class="line">bin:x:2:2:Owner of system commands:/bin:</span><br><span class="line">sys:x:3:3:Owner of system files:/usr/sys:</span><br><span class="line">adm:x:4:4:System accounting:/usr/adm:</span><br><span class="line">uucp:x:5:5:UUCP administrator:/usr/lib/uucp:</span><br><span class="line">auth:x:7:21:Authentication administrator:/tcb/files/auth:</span><br><span class="line">cron:x:9:16:Cron daemon:/usr/spool/cron:</span><br><span class="line">listen:x:37:4:Network daemon:/usr/net/nls:</span><br><span class="line">lp:x:71:18:Printer administrator:/usr/spool/lp:</span><br><span class="line">sam:x:200:50:Sam san:/home/sam:/bin/sh</span><br></pre></td></tr></table></figure>
+
+<p>从上面的例子我们可以看到，/etc/passwd中一行记录对应着一个用户，每行记录又被冒号(:)分隔为7个字段，其格式和具体含义如下：</p>
+<blockquote>
+<p>用户名:口令:用户标识号:组标识号:注释性描述:主目录:登录Shell</p>
+</blockquote>
+<h2 id="5-2-更改目录所属用户和用户组"><a href="#5-2-更改目录所属用户和用户组" class="headerlink" title="5.2 更改目录所属用户和用户组"></a>5.2 更改目录所属用户和用户组</h2><p><strong>chown 修改 文件/目录 所属用户：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ chown userA filename/dir  <span class="comment"># 将 filename/dir 的所属用户改为 userA 用户</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>chgrp 修改 文件/目录 所属组：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ chgrp grpA filename/dir  <span class="comment"># 将 filename/dir 的所属组改为 grpA 组</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="5-3-查看用户所属组"><a href="#5-3-查看用户所属组" class="headerlink" title="5.3 查看用户所属组"></a>5.3 查看用户所属组</h2><h3 id="查看当前用户所属组"><a href="#查看当前用户所属组" class="headerlink" title="查看当前用户所属组"></a>查看当前用户所属组</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">直接输入</span><br><span class="line">groups</span><br></pre></td></tr></table></figure>
+
+<p>查看用户1、用户2和用户3所属的组</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groups  &lt;user1&gt;  &lt;user2&gt;  &lt;user3&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="../../../../images/linux.png" alt="linux"></p>
 
 		  
       
@@ -264,7 +351,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">PyMol</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
         		</li>
       		
 		</ul>
@@ -320,7 +407,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/21/PyMol%E6%B8%B2%E6%9F%93%EF%BC%88Ray%EF%BC%89/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/22/Linux%E8%AE%B0%E5%BD%95-%E5%88%9B%E5%BB%BA%E6%96%B0%E7%94%A8%E6%88%B7/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -334,18 +421,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/02/21/PyMol%E9%AB%98%E8%B4%A8%E9%87%8F%E4%BD%9C%E5%9B%BE%E6%A1%88%E4%BE%8B%E4%B8%80%EF%BC%9Atransparency%20-%20%E5%89%AF%E6%9C%AC/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/02/22/Linux%E8%AE%B0%E5%BD%95-%E6%9F%A5%E7%9C%8B%E7%A1%AC%E7%9B%98%E4%BF%A1%E6%81%AF/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          PyMol高质量作图案例一：transparency使用
+          Linux记录之查看硬盘信息
         
       </div>
     </a>
   
   
-    <a href="/2020/02/21/Linux%E6%89%B9%E9%87%8F%E9%87%8D%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Linux批量重命名文件</div>
+    <a href="/2020/02/21/%E8%AE%A1%E7%AE%97%E7%94%9F%E7%89%A9%E5%AD%A6%E4%B9%8BB-factor/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">B-factor(温度因子)</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -386,7 +473,7 @@
 <script src="https://billts.site/js/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "PyMol渲染（Ray）",
+  id: "Linux记录之用户管理",
   owner: 'dakkki',
   repo: 'dakkki.github.io',
   oauth: {
