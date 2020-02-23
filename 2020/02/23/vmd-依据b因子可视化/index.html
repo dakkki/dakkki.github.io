@@ -6,22 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>linux学习之环境变量 | dakki</title>
+  <title>vmd依据B-factor进行可视化 | dakki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="方法一——变量先赋值变量 1$ bowtie2 &#x3D; &#x2F;home&#x2F;chendaoxing&#x2F;biosoft&#x2F;bowtie&#x2F;bowtie2  使用方法：$bowtie2 方法二——alias此方法相当于创建了快捷方式 1$ alias &quot;bowtie2 &#x3D; &#x2F;home&#x2F;chendaoxing&#x2F;biosoft&#x2F;bowtie&#x2F;bowtie2&quot;  使用方法：bowtie2 方法三——export PATH此方">
+  <meta name="description" content="pdbbfactor.tcl使用要在VMD中可视化，请在VMD Tcl命令行上使用以下pdbbfactor Tcl脚本： 12source pdbbfactor.tclpdbbfactor adk_distance_bfac.pdb  pdbbfactor最初由Justin Gullingsrud（2004）编写，pdbbfactor.tcl脚本详情如下: 12345678910111213141">
 <meta property="og:type" content="article">
-<meta property="og:title" content="linux学习之环境变量">
-<meta property="og:url" content="http://yoursite.com/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/index.html">
+<meta property="og:title" content="vmd依据B-factor进行可视化">
+<meta property="og:url" content="http://yoursite.com/2020/02/23/vmd-%E4%BE%9D%E6%8D%AEb%E5%9B%A0%E5%AD%90%E5%8F%AF%E8%A7%86%E5%8C%96/index.html">
 <meta property="og:site_name" content="dakki">
-<meta property="og:description" content="方法一——变量先赋值变量 1$ bowtie2 &#x3D; &#x2F;home&#x2F;chendaoxing&#x2F;biosoft&#x2F;bowtie&#x2F;bowtie2  使用方法：$bowtie2 方法二——alias此方法相当于创建了快捷方式 1$ alias &quot;bowtie2 &#x3D; &#x2F;home&#x2F;chendaoxing&#x2F;biosoft&#x2F;bowtie&#x2F;bowtie2&quot;  使用方法：bowtie2 方法三——export PATH此方">
-<meta property="og:image" content="http://yoursite.com/images/linux.png">
-<meta property="article:published_time" content="2020-02-21T08:43:05.218Z">
-<meta property="article:modified_time" content="2020-02-20T17:27:21.371Z">
+<meta property="og:description" content="pdbbfactor.tcl使用要在VMD中可视化，请在VMD Tcl命令行上使用以下pdbbfactor Tcl脚本： 12source pdbbfactor.tclpdbbfactor adk_distance_bfac.pdb  pdbbfactor最初由Justin Gullingsrud（2004）编写，pdbbfactor.tcl脚本详情如下: 12345678910111213141">
+<meta property="article:published_time" content="2020-02-23T11:28:53.792Z">
+<meta property="article:modified_time" content="2020-02-23T11:37:18.361Z">
 <meta property="article:author" content="dakki">
-<meta property="article:tag" content="学习">
-<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="vmd">
+<meta property="article:tag" content="脚本">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/linux.png">
   
     <link rel="alternative" href="/atom.xml" title="dakki" type="application/atom+xml">
   
@@ -213,20 +211,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-linux学习-环境变量" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-vmd-依据b因子可视化" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      linux学习之环境变量
+      vmd依据B-factor进行可视化
     </h1>
   
 
         
-        <a href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/" class="archive-article-date">
-  	<time datetime="2020-02-21T08:43:05.218Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
+        <a href="/2020/02/23/vmd-%E4%BE%9D%E6%8D%AEb%E5%9B%A0%E5%AD%90%E5%8F%AF%E8%A7%86%E5%8C%96/" class="archive-article-date">
+  	<time datetime="2020-02-23T11:28:53.792Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-23</time>
 </a>
         
       </header>
@@ -235,33 +233,16 @@
       
 		  
 		  
-  	        <h3 id="方法一——变量"><a href="#方法一——变量" class="headerlink" title="方法一——变量"></a>方法一——变量</h3><p>先赋值变量</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ bowtie2 = /home/chendaoxing/biosoft/bowtie/bowtie2</span><br></pre></td></tr></table></figure>
+  	        <h1 id="pdbbfactor-tcl使用"><a href="#pdbbfactor-tcl使用" class="headerlink" title="pdbbfactor.tcl使用"></a>pdbbfactor.tcl使用</h1><p>要在<a href="http://www.ks.uiuc.edu/Research/vmd/" target="_blank" rel="noopener">VMD中</a>可视化，请在VMD Tcl命令行上使用以下pdbbfactor Tcl脚本：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> pdbbfactor.tcl</span><br><span class="line">pdbbfactor adk_distance_bfac.pdb</span><br></pre></td></tr></table></figure>
 
-<p>使用方法：$bowtie2</p>
-<h3 id="方法二——alias"><a href="#方法二——alias" class="headerlink" title="方法二——alias"></a>方法二——alias</h3><p>此方法相当于创建了快捷方式</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">alias</span> <span class="string">"bowtie2 = /home/chendaoxing/biosoft/bowtie/bowtie2"</span></span><br></pre></td></tr></table></figure>
+<p><a href="http://www.ks.uiuc.edu/Research/vmd/script_library/scripts/pdbbfactor/" target="_blank" rel="noopener">pdbbfactor</a>最初由Justin Gullingsrud（2004）编写，<a href="http://www.ks.uiuc.edu/Research/vmd/script_library/scripts/pdbbfactor/pdbbfactor.tcl" target="_blank" rel="noopener">pdbbfactor.tcl</a>脚本详情如下:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># load multi-frame pdb file, storing B factors from each frame in user.</span></span><br><span class="line"><span class="comment"># usage: pdbbfactor &lt;filename&gt;</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Justin Gullingsrud</span></span><br><span class="line"><span class="comment"># 3 September 2004</span></span><br><span class="line"></span><br><span class="line">proc pdbbfactor &#123; fname &#125; &#123;</span><br><span class="line">  mol new <span class="variable">$fname</span> waitfor all</span><br><span class="line">  <span class="built_in">set</span> all [atomselect top all]</span><br><span class="line">  <span class="built_in">set</span> frame 0</span><br><span class="line">  <span class="built_in">set</span> <span class="keyword">in</span> [open <span class="variable">$fname</span> r]</span><br><span class="line">  <span class="built_in">set</span> beta &#123;&#125;</span><br><span class="line">  <span class="keyword">while</span> &#123; [gets <span class="variable">$in</span> line] != -1 &#125; &#123;</span><br><span class="line">    switch -- [string range <span class="variable">$line</span> 0 3] &#123;</span><br><span class="line">      END &#123;</span><br><span class="line">        <span class="variable">$all</span> frame <span class="variable">$frame</span></span><br><span class="line">        <span class="variable">$all</span> <span class="built_in">set</span> user <span class="variable">$beta</span></span><br><span class="line">        <span class="built_in">set</span> beta &#123;&#125;</span><br><span class="line">        incr frame</span><br><span class="line">      &#125;</span><br><span class="line">      ATOM -</span><br><span class="line">      HETA &#123;</span><br><span class="line">        lappend beta [string range <span class="variable">$line</span> 61 66]</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>使用方法：bowtie2</p>
-<h3 id="方法三——export-PATH"><a href="#方法三——export-PATH" class="headerlink" title="方法三——export PATH"></a>方法三——export PATH</h3><p>此方法为临时设置环境变量，重新登入后无用</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:/home/chendaoxing/biosoft/bowtie</span><br></pre></td></tr></table></figure>
+<p><a href="https://www.mdanalysis.org/MDAnalysisTutorial/writing.html" target="_blank" rel="noopener">本教程</a>进行了一些修改：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># load multi-frame pdb file, storing B factors from each frame in user.</span></span><br><span class="line"><span class="comment"># usage: pdbbfactor &lt;filename&gt;</span></span><br><span class="line"><span class="comment"># url: http://www.ks.uiuc.edu/Research/vmd/script_library/scripts/pdbbfactor/</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Justin Gullingsrud</span></span><br><span class="line"><span class="comment"># 3 September 2004</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Oliver Beckstein, 2014-10-30</span></span><br><span class="line"><span class="comment"># updated for use with standard multipdb files which use ENDMDL as separators</span></span><br><span class="line"><span class="comment"># (END --&gt; ENDM)</span></span><br><span class="line"></span><br><span class="line">proc pdbbfactor &#123; fname &#125; &#123;</span><br><span class="line">  mol new <span class="variable">$fname</span> waitfor all</span><br><span class="line">  <span class="built_in">set</span> all [atomselect top all]</span><br><span class="line">  <span class="built_in">set</span> frame 0</span><br><span class="line">  <span class="built_in">set</span> <span class="keyword">in</span> [open <span class="variable">$fname</span> r]</span><br><span class="line">  <span class="built_in">set</span> beta &#123;&#125;</span><br><span class="line">  <span class="keyword">while</span> &#123; [gets <span class="variable">$in</span> line] != -1 &#125; &#123;</span><br><span class="line">    switch -- [string range <span class="variable">$line</span> 0 3] &#123;</span><br><span class="line">      ENDM &#123;</span><br><span class="line">        <span class="variable">$all</span> frame <span class="variable">$frame</span></span><br><span class="line">        <span class="variable">$all</span> <span class="built_in">set</span> user <span class="variable">$beta</span></span><br><span class="line">        <span class="built_in">set</span> beta &#123;&#125;</span><br><span class="line">        incr frame</span><br><span class="line">      &#125;</span><br><span class="line">      ATOM -</span><br><span class="line">      HETA &#123;</span><br><span class="line">        lappend beta [string range <span class="variable">$line</span> 61 66]</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>使用方法：bowtie2</p>
-<h3 id="方法四-修改配置文件——vim-bashrc"><a href="#方法四-修改配置文件——vim-bashrc" class="headerlink" title="方法四-修改配置文件——vim ~/.bashrc"></a>方法四-修改配置文件——vim ~/.bashrc</h3><p>永久修改环境变量</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ vim ~/.bashrc </span><br><span class="line"></span><br><span class="line"><span class="comment"># 在最后加上一行</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:/home/chendaoxing/biosoft/bowtie</span><br><span class="line">$ <span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure>
-
-<p>使用方法：bowtie2</p>
-<h3 id="方法五-修改配置文件——vim-etc-bashrc"><a href="#方法五-修改配置文件——vim-etc-bashrc" class="headerlink" title="方法五-修改配置文件——vim /etc/bashrc"></a>方法五-修改配置文件——vim /etc/bashrc</h3><p>永久修改环境变量</p>
-<p>需要重启终端，或者手动source /etc/bashrc</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ vim /etc/bashrc </span><br><span class="line"></span><br><span class="line"><span class="comment"># 在最后加上一行</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:/home/chendaoxing/biosoft/bowtie</span><br></pre></td></tr></table></figure>
-
-<p>使用方法：bowtie2</p>
-<h3 id="方法六-修改配置文件——vim-etc-profile"><a href="#方法六-修改配置文件——vim-etc-profile" class="headerlink" title="方法六-修改配置文件——vim /etc/profile"></a>方法六-修改配置文件——vim /etc/profile</h3><p>永久修改环境变量</p>
-<p>需要重启终端，或者手动source /etc/bashrc</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ vim /etc/profile </span><br><span class="line"></span><br><span class="line"><span class="comment"># 在最后加上一行</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:/home/chendaoxing/biosoft/bowtie</span><br></pre></td></tr></table></figure>
-
-<p>使用方法：bowtie2</p>
-<p><img src="../../../../images/linux.png" alt="linux"></p>
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><p><a href="https://www.mdanalysis.org/MDAnalysisTutorial/writing.html" target="_blank" rel="noopener">Example: Saving dynamic per-atom properties in B-factor</a></p>
 
 		  
       
@@ -275,11 +256,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vmd</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">脚本</a>
         		</li>
       		
 		</ul>
@@ -335,7 +316,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/23/vmd-%E4%BE%9D%E6%8D%AEb%E5%9B%A0%E5%AD%90%E5%8F%AF%E8%A7%86%E5%8C%96/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -349,18 +330,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/02/21/Linux%E6%89%B9%E9%87%8F%E9%87%8D%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/02/23/PyMol%E7%BB%98%E7%94%BB%E6%A8%AA%E5%88%87%E9%9D%A2%E5%9B%BE/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Linux批量重命名文件
+          PyMol绘画横切面图
         
       </div>
     </a>
   
   
-    <a href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E6%9F%A5%E7%9C%8B%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">linux学习之查看硬件信息</div>
+    <a href="/2020/02/23/Python%E8%AE%B0%E5%BD%95-%E4%BA%8C%E8%BF%9B%E5%88%B6%EF%BC%8C%E5%8D%81%E8%BF%9B%E5%88%B6%EF%BC%8C%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">python记录之二进制，十进制，十六进制转换</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -401,7 +382,7 @@
 <script src="https://billts.site/js/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "linux学习之环境变量",
+  id: "vmd依据B-factor进行可视化",
   owner: 'dakkki',
   repo: 'dakkki.github.io',
   oauth: {
