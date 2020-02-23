@@ -6,16 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: Linux | dakki</title>
+  <title>python记录之二进制，十进制，十六进制转换 | dakki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="😯😯">
-<meta property="og:type" content="website">
-<meta property="og:title" content="dakki">
-<meta property="og:url" content="http://yoursite.com/tags/Linux/index.html">
+  <meta name="description" content="十六进制 到 十进制使用 int() 函数 ，第一个参数是字符串 ‘0Xff’ ,第二个参数是说明，这个字符串是几进制的数。  转化的结果是一个十进制数。 12&gt;&gt;&gt; int(&#39;0xf&#39;,16) 15  二进制 到 十进制12&gt;&gt;&gt; int(&#39;10100111110&#39;,2)1342  八进制 到 十进制12&gt;&gt;&gt; int(&#39;17&#39;,8)15">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python记录之二进制，十进制，十六进制转换">
+<meta property="og:url" content="http://yoursite.com/2020/02/23/Python%E8%AE%B0%E5%BD%95-%E4%BA%8C%E8%BF%9B%E5%88%B6%EF%BC%8C%E5%8D%81%E8%BF%9B%E5%88%B6%EF%BC%8C%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/index.html">
 <meta property="og:site_name" content="dakki">
-<meta property="og:description" content="😯😯">
+<meta property="og:description" content="十六进制 到 十进制使用 int() 函数 ，第一个参数是字符串 ‘0Xff’ ,第二个参数是说明，这个字符串是几进制的数。  转化的结果是一个十进制数。 12&gt;&gt;&gt; int(&#39;0xf&#39;,16) 15  二进制 到 十进制12&gt;&gt;&gt; int(&#39;10100111110&#39;,2)1342  八进制 到 十进制12&gt;&gt;&gt; int(&#39;17&#39;,8)15">
+<meta property="og:image" content="http://yoursite.com/images/python.png">
+<meta property="article:published_time" content="2020-02-23T07:22:58.940Z">
+<meta property="article:modified_time" content="2020-02-23T10:30:46.771Z">
 <meta property="article:author" content="dakki">
+<meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/python.png">
   
     <link rel="alternative" href="/atom.xml" title="dakki" type="application/atom+xml">
   
@@ -207,443 +212,205 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Python记录-二进制，十进制，十六进制转换" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      python记录之二进制，十进制，十六进制转换
+    </h1>
+  
+
+        
+        <a href="/2020/02/23/Python%E8%AE%B0%E5%BD%95-%E4%BA%8C%E8%BF%9B%E5%88%B6%EF%BC%8C%E5%8D%81%E8%BF%9B%E5%88%B6%EF%BC%8C%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/" class="archive-article-date">
+  	<time datetime="2020-02-23T07:22:58.940Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-23</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+		  
+		  
+  	        <h1 id="十六进制-到-十进制"><a href="#十六进制-到-十进制" class="headerlink" title="十六进制 到 十进制"></a>十六进制 到 十进制</h1><p>使用 int() 函数 ，第一个参数是字符串 ‘0Xff’ ,第二个参数是说明，这个字符串是几进制的数。  转化的结果是一个十进制数。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>int(<span class="string">'0xf'</span>,<span class="number">16</span>) </span><br><span class="line"><span class="number">15</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="二进制-到-十进制"><a href="#二进制-到-十进制" class="headerlink" title="二进制 到 十进制"></a>二进制 到 十进制</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>int(<span class="string">'10100111110'</span>,<span class="number">2</span>)</span><br><span class="line"><span class="number">1342</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="八进制-到-十进制"><a href="#八进制-到-十进制" class="headerlink" title="八进制 到 十进制"></a>八进制 到 十进制</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>int(<span class="string">'17'</span>,<span class="number">8</span>)</span><br><span class="line"><span class="number">15</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>其实可以看到，不管 几进制数 转换成 十进制数 ，都是用 int()  函数 。之后后面的 第二个参数 写清楚 前面字符串 是 几进制数就可以 。注意一定要合法。 比如2进制数就不能出现2这样的字符。</p>
+</blockquote>
+<h1 id="十进制-转-十六进制"><a href="#十进制-转-十六进制" class="headerlink" title="十进制 转 十六进制"></a>十进制 转 十六进制</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>hex(<span class="number">1033</span>)</span><br><span class="line"><span class="string">'0x409'</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="二进制-转-十六进制"><a href="#二进制-转-十六进制" class="headerlink" title="二进制 转 十六进制"></a>二进制 转 十六进制</h1><p>就是 二进制先转成 十进制， 再转成 十六进制。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>hex(int(<span class="string">'101010'</span>,<span class="number">2</span>))</span><br><span class="line"><span class="string">'0x2a'</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="八进制到-十六进制"><a href="#八进制到-十六进制" class="headerlink" title="八进制到 十六进制"></a>八进制到 十六进制</h1><p>就是 八进制先转成 十进制， 再转成 十六进制。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>hex(int(<span class="string">'17'</span>,<span class="number">8</span>))</span><br><span class="line"><span class="string">'0xf'</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="十进制转二进制"><a href="#十进制转二进制" class="headerlink" title="十进制转二进制"></a>十进制转二进制</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>bin(<span class="number">10</span>)</span><br><span class="line"><span class="string">'0b1010'</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="十六进制转-二进制"><a href="#十六进制转-二进制" class="headerlink" title="十六进制转 二进制"></a>十六进制转 二进制</h1><p>十六进制-&gt;十进制-&gt;二进制</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>bin(int(<span class="string">'ff'</span>,<span class="number">16</span>))</span><br><span class="line"><span class="string">'0b11111111'</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="八进制-到-二进制"><a href="#八进制-到-二进制" class="headerlink" title="八进制 到 二进制"></a>八进制 到 二进制</h1><p>八进制先到十进制，再到二进制</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>bin(int(<span class="string">'17'</span>,<span class="number">8</span>))</span><br><span class="line"><span class="string">'0b1111'</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="二进制-到-八进制"><a href="#二进制-到-八进制" class="headerlink" title="二进制 到 八进制"></a>二进制 到 八进制</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>oct(<span class="number">0b1010</span>)     </span><br><span class="line"><span class="string">'012'</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="十进制到八进制"><a href="#十进制到八进制" class="headerlink" title="十进制到八进制"></a>十进制到八进制</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>oct(<span class="number">11</span>)</span><br><span class="line"><span class="string">'013'</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="十六进制到八进制"><a href="#十六进制到八进制" class="headerlink" title="十六进制到八进制"></a>十六进制到八进制</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>oct(<span class="number">0xf</span>) </span><br><span class="line"><span class="string">'017'</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>可见oct 函数 可将任意进制的数 转换成 8进制的。</p>
+</blockquote>
+<p><img src="../../../../images/python.png" alt="R"></p>
+
+		  
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/22/Linux%E8%AE%B0%E5%BD%95-%E6%9F%A5%E7%9C%8B%E7%A1%AC%E7%9B%98%E4%BF%A1%E6%81%AF/" class="archive-article-date">
-  	<time datetime="2020-02-22T10:50:32.907Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/22/Linux%E8%AE%B0%E5%BD%95-%E6%9F%A5%E7%9C%8B%E7%A1%AC%E7%9B%98%E4%BF%A1%E6%81%AF/">Linux记录之查看硬盘信息</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/23/Python%E8%AE%B0%E5%BD%95-%E4%BA%8C%E8%BF%9B%E5%88%B6%EF%BC%8C%E5%8D%81%E8%BF%9B%E5%88%B6%EF%BC%8C%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/22/Linux%E8%AE%B0%E5%BD%95-%E5%88%9B%E5%BB%BA%E6%96%B0%E7%94%A8%E6%88%B7/" class="archive-article-date">
-  	<time datetime="2020-02-22T06:34:49.087Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-22</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/02/22/Linux%E8%AE%B0%E5%BD%95-%E6%9F%A5%E7%9C%8B%E7%A1%AC%E7%9B%98%E4%BF%A1%E6%81%AF/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux记录之查看硬盘信息</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/22/Linux%E8%AE%B0%E5%BD%95-%E5%88%9B%E5%BB%BA%E6%96%B0%E7%94%A8%E6%88%B7/">Linux记录之用户管理</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/21/shadowsocks%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E8%B0%B7%E6%AD%8C%E5%AD%A6%E6%9C%AF%E6%88%96%E5%87%BA%E7%8E%B0%E9%AA%8C%E8%AF%81%E7%A0%81/" class="archive-article-date">
-  	<time datetime="2020-02-21T08:43:05.265Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
-</a>
-        </div>
-    	 
+  <!-- 《添加版权声明 -->
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/21/shadowsocks%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E8%B0%B7%E6%AD%8C%E5%AD%A6%E6%9C%AF%E6%88%96%E5%87%BA%E7%8E%B0%E9%AA%8C%E8%AF%81%E7%A0%81/">shadowsocks无法打开谷歌学术或出现验证码</a>
-    </h1>
+  <!-- 添加版权声明》 -->
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">VPS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/21/Linux%E6%89%B9%E9%87%8F%E9%87%8D%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6/" class="archive-article-date">
-  	<time datetime="2020-02-21T08:43:05.220Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
-</a>
-        </div>
-    	 
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+<script src="https://billts.site/js/gitment.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "python记录之二进制，十进制，十六进制转换",
+  owner: 'dakkki',
+  repo: 'dakkki.github.io',
+  oauth: {
+    client_id: '8b6559b847fd562cdba3',
+    client_secret: '70ec7e8e65b48f8e56081ce19f54b16e80b0969e',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/21/Linux%E6%89%B9%E9%87%8F%E9%87%8D%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6/">Linux批量重命名文件</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">脚本模板</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/" class="archive-article-date">
-  	<time datetime="2020-02-21T08:43:05.218Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/">linux学习之环境变量</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E6%9F%A5%E7%9C%8B%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/" class="archive-article-date">
-  	<time datetime="2020-02-21T08:43:05.217Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E6%9F%A5%E7%9C%8B%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/">linux学习之查看硬件信息</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E5%B8%B8%E8%A7%81%E4%B8%8D%E6%98%93%E8%AE%B0%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2020-02-21T08:43:05.215Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E5%B8%B8%E8%A7%81%E4%B8%8D%E6%98%93%E8%AE%B0%E5%91%BD%E4%BB%A4/">linux学习之常用不易记命令</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C/" class="archive-article-date">
-  	<time datetime="2020-02-21T08:43:05.214Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C/">linux学习之后台运行</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/21/Linux%E5%8D%81%E5%A4%A7%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2020-02-21T08:43:05.212Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/21/Linux%E5%8D%81%E5%A4%A7%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Linux十大常用命令</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/21/Linux%E5%8D%81%E5%A4%A7%E5%AE%9E%E7%94%A8%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2020-02-21T08:43:05.210Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/21/Linux%E5%8D%81%E5%A4%A7%E5%AE%9E%E7%94%A8%E5%91%BD%E4%BB%A4/">Linux十大实用命令</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/tags/Linux/page/2/">2</a><a class="extend next" rel="next" href="/tags/Linux/page/2/">下一页</a>
-    </nav>
-  
-
 
           </div>
         </div>
@@ -668,9 +435,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
