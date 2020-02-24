@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Linux安装软件总结 | dakki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="pip &amp; conda 更换国内源由于种种原因，国内访问国外的很多网站速度都比较受限，偶尔还可能出现无法连接的现象。为了加快我们通过pip、conda等软件包管理工具下载和更新的速度，我们 可以把pip、conda默认的下载地址改成国内的源镜像，即快速又稳定。下面介绍更改pip、conda源的方法。 pip更换国内源Linux下，修改~&#x2F;.pip&#x2F;pip.conf（如果没有此文件，可以创建">
+  <meta name="description" content="pip &amp; conda 更换国内源由于种种原因，国内访问国外的很多网站速度都比较受限，偶尔还可能出现无法连接的现象。为了加快我们通过pip、conda等软件包管理工具下载和更新的速度，我们 可以把pip、conda默认的下载地址改成国内的源镜像，即快速又稳定。下面介绍更改pip、conda源的方法。 pip更换国内源直接命令指定源下载： 1pip install --index-url $">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux安装软件总结">
 <meta property="og:url" content="http://yoursite.com/2020/02/24/pip%E5%92%8Cconda%E6%8D%A2%E6%BA%90/index.html">
 <meta property="og:site_name" content="dakki">
-<meta property="og:description" content="pip &amp; conda 更换国内源由于种种原因，国内访问国外的很多网站速度都比较受限，偶尔还可能出现无法连接的现象。为了加快我们通过pip、conda等软件包管理工具下载和更新的速度，我们 可以把pip、conda默认的下载地址改成国内的源镜像，即快速又稳定。下面介绍更改pip、conda源的方法。 pip更换国内源Linux下，修改~&#x2F;.pip&#x2F;pip.conf（如果没有此文件，可以创建">
+<meta property="og:description" content="pip &amp; conda 更换国内源由于种种原因，国内访问国外的很多网站速度都比较受限，偶尔还可能出现无法连接的现象。为了加快我们通过pip、conda等软件包管理工具下载和更新的速度，我们 可以把pip、conda默认的下载地址改成国内的源镜像，即快速又稳定。下面介绍更改pip、conda源的方法。 pip更换国内源直接命令指定源下载： 1pip install --index-url $">
 <meta property="og:image" content="http://yoursite.com/images/linux.png">
 <meta property="article:published_time" content="2020-02-24T15:08:38.929Z">
-<meta property="article:modified_time" content="2020-02-24T15:10:38.009Z">
+<meta property="article:modified_time" content="2020-02-24T15:42:06.352Z">
 <meta property="article:author" content="dakki">
 <meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
@@ -235,7 +235,10 @@
 		  
 		  
   	        <h1 id="pip-amp-conda-更换国内源"><a href="#pip-amp-conda-更换国内源" class="headerlink" title="pip &amp; conda 更换国内源"></a>pip &amp; conda 更换国内源</h1><p>由于种种原因，国内访问国外的很多网站速度都比较受限，偶尔还可能出现无法连接的现象。为了加快我们通过pip、conda等软件包管理工具下载和更新的速度，我们 可以把pip、conda默认的下载地址改成国内的源镜像，即快速又稳定。下面介绍更改pip、conda源的方法。</p>
-<h2 id="pip更换国内源"><a href="#pip更换国内源" class="headerlink" title="pip更换国内源"></a>pip更换国内源</h2><p>Linux下，修改~/.pip/pip.conf（如果没有此文件，可以创建此文件夹和文件）<br>内容如下：</p>
+<h2 id="pip更换国内源"><a href="#pip更换国内源" class="headerlink" title="pip更换国内源"></a>pip更换国内源</h2><p>直接命令指定源下载：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install --index-url <span class="variable">$URL</span> <span class="variable">$PACKAGE_NAME</span></span><br></pre></td></tr></table></figure>
+
+<p>Linux下，修改~/.pip/pip.conf（如果没有此文件，可以创建此文件夹和文件）<br>内容如下：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line">[install]</span><br><span class="line">trusted-host = pypi.tuna.tsinghua.edu.cn</span><br></pre></td></tr></table></figure>
 
 
@@ -245,7 +248,10 @@
 
 <p>如果非教育网用户，可以改用阿里或者豆瓣的源，可能速度更快。链接附上：</p>
 <p>阿里云： <a href="http://mirrors.aliyun.com/pypi/simple/" target="_blank" rel="noopener">http://mirrors.aliyun.com/pypi/simple/</a><br>豆瓣： <a href="http://pypi.douban.com/simple/" target="_blank" rel="noopener">http://pypi.douban.com/simple/</a></p>
-<h2 id="conda更换国内源"><a href="#conda更换国内源" class="headerlink" title="conda更换国内源"></a>conda更换国内源</h2><p>直接在终端下运行修改命令即可：</p>
+<h2 id="conda更换国内源"><a href="#conda更换国内源" class="headerlink" title="conda更换国内源"></a>conda更换国内源</h2><p>直接命令指定源下载：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install --channel <span class="variable">$URL</span> <span class="variable">$PACKAGE_NAME</span></span><br></pre></td></tr></table></figure>
+
+<p>直接在终端下运行修改命令即可：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls yes</span><br></pre></td></tr></table></figure>
 
 <p><img src="../../../../images/linux.png" alt="linux"></p>
@@ -480,15 +486,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">学习</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">PyMol</a>
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -496,7 +498,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+                <a href="javascript:void(0)" class="js-tag color1">PyMol</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -504,11 +506,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">R</a>
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -516,7 +518,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
+                <a href="javascript:void(0)" class="js-tag color2">R</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -528,7 +530,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">计算生物学</a>
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -537,6 +539,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">脚本</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">计算生物学</a>
               </li>
             
             <div class="clearfix"></div>
