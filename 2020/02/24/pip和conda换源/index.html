@@ -6,22 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Python学习之list和str相互转换 | dakki</title>
+  <title>Linux安装软件总结 | dakki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.str &gt;&gt;&gt;list  123str1 &#x3D; &quot;12345&quot;list1 &#x3D; list(str1)print list1  123str2 &#x3D; &quot;123 sjhid dhi&quot;list2 &#x3D; str2.split() #or list2 &#x3D; str2.split(&quot; &quot;)print list2  123str3 &#x3D; &quot;www.google.com&quot;list3 &#x3D; str3.spl">
+  <meta name="description" content="pip &amp; conda 更换国内源由于种种原因，国内访问国外的很多网站速度都比较受限，偶尔还可能出现无法连接的现象。为了加快我们通过pip、conda等软件包管理工具下载和更新的速度，我们 可以把pip、conda默认的下载地址改成国内的源镜像，即快速又稳定。下面介绍更改pip、conda源的方法。 pip更换国内源Linux下，修改~&#x2F;.pip&#x2F;pip.conf（如果没有此文件，可以创建">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python学习之list和str相互转换">
-<meta property="og:url" content="http://yoursite.com/2020/02/21/Python%E5%AD%A6%E4%B9%A0-list%E5%92%8Cstr%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/index.html">
+<meta property="og:title" content="Linux安装软件总结">
+<meta property="og:url" content="http://yoursite.com/2020/02/24/pip%E5%92%8Cconda%E6%8D%A2%E6%BA%90/index.html">
 <meta property="og:site_name" content="dakki">
-<meta property="og:description" content="1.str &gt;&gt;&gt;list  123str1 &#x3D; &quot;12345&quot;list1 &#x3D; list(str1)print list1  123str2 &#x3D; &quot;123 sjhid dhi&quot;list2 &#x3D; str2.split() #or list2 &#x3D; str2.split(&quot; &quot;)print list2  123str3 &#x3D; &quot;www.google.com&quot;list3 &#x3D; str3.spl">
-<meta property="og:image" content="http://yoursite.com/images/python.png">
-<meta property="article:published_time" content="2020-02-21T08:43:05.226Z">
-<meta property="article:modified_time" content="2020-02-13T17:11:16.787Z">
+<meta property="og:description" content="pip &amp; conda 更换国内源由于种种原因，国内访问国外的很多网站速度都比较受限，偶尔还可能出现无法连接的现象。为了加快我们通过pip、conda等软件包管理工具下载和更新的速度，我们 可以把pip、conda默认的下载地址改成国内的源镜像，即快速又稳定。下面介绍更改pip、conda源的方法。 pip更换国内源Linux下，修改~&#x2F;.pip&#x2F;pip.conf（如果没有此文件，可以创建">
+<meta property="og:image" content="http://yoursite.com/images/linux.png">
+<meta property="article:published_time" content="2020-02-24T15:08:38.929Z">
+<meta property="article:modified_time" content="2020-02-24T15:10:38.009Z">
 <meta property="article:author" content="dakki">
-<meta property="article:tag" content="学习">
-<meta property="article:tag" content="Python">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/python.png">
+<meta name="twitter:image" content="http://yoursite.com/images/linux.png">
   
     <link rel="alternative" href="/atom.xml" title="dakki" type="application/atom+xml">
   
@@ -213,20 +212,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Python学习-list和str相互转换" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-pip和conda换源" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Python学习之list和str相互转换
+      Linux安装软件总结
     </h1>
   
 
         
-        <a href="/2020/02/21/Python%E5%AD%A6%E4%B9%A0-list%E5%92%8Cstr%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/" class="archive-article-date">
-  	<time datetime="2020-02-21T08:43:05.226Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
+        <a href="/2020/02/24/pip%E5%92%8Cconda%E6%8D%A2%E6%BA%90/" class="archive-article-date">
+  	<time datetime="2020-02-24T15:08:38.929Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-24</time>
 </a>
         
       </header>
@@ -235,28 +234,21 @@
       
 		  
 		  
-  	        <p>1.str &gt;&gt;&gt;list </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">"12345"</span></span><br><span class="line">list1 = list(str1)</span><br><span class="line"><span class="keyword">print</span> list1</span><br></pre></td></tr></table></figure>
+  	        <h1 id="pip-amp-conda-更换国内源"><a href="#pip-amp-conda-更换国内源" class="headerlink" title="pip &amp; conda 更换国内源"></a>pip &amp; conda 更换国内源</h1><p>由于种种原因，国内访问国外的很多网站速度都比较受限，偶尔还可能出现无法连接的现象。为了加快我们通过pip、conda等软件包管理工具下载和更新的速度，我们 可以把pip、conda默认的下载地址改成国内的源镜像，即快速又稳定。下面介绍更改pip、conda源的方法。</p>
+<h2 id="pip更换国内源"><a href="#pip更换国内源" class="headerlink" title="pip更换国内源"></a>pip更换国内源</h2><p>Linux下，修改~/.pip/pip.conf（如果没有此文件，可以创建此文件夹和文件）<br>内容如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line">[install]</span><br><span class="line">trusted-host = pypi.tuna.tsinghua.edu.cn</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str2 = <span class="string">"123 sjhid dhi"</span></span><br><span class="line">list2 = str2.split() <span class="comment">#or list2 = str2.split(" ")</span></span><br><span class="line"><span class="keyword">print</span> list2</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str3 = <span class="string">"www.google.com"</span></span><br><span class="line">list3 = str3.split(<span class="string">"."</span>)</span><br><span class="line"><span class="keyword">print</span> list3</span><br></pre></td></tr></table></figure>
+<p>Windows下，直接在user目录中创建一个pip目录，如：C:\Users\xx\pip，新建文件pip.ini，内容同上：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line">[install]</span><br><span class="line">trusted-host = pypi.tuna.tsinghua.edu.cn</span><br></pre></td></tr></table></figure>
 
-<p>输出为：</p>
-<blockquote>
-<p>[‘1’, ‘2’, ‘3’, ‘4’, ‘5’]<br>[‘123’, ‘sjhid’, ‘dhi’]<br>[‘www’, ‘google’, ‘com’]</p>
-</blockquote>
-<p>3.list &gt;&gt;&gt;str</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">str4 = <span class="string">""</span>.join(list3)</span><br><span class="line"><span class="keyword">print</span> str4</span><br><span class="line">str5 = <span class="string">"."</span>.join(list3)</span><br><span class="line"><span class="keyword">print</span> str5</span><br><span class="line">str6 = <span class="string">" "</span>.join(list3)</span><br><span class="line"><span class="keyword">print</span> str6</span><br></pre></td></tr></table></figure>
 
-<p>输出为：</p>
-<blockquote>
-<p>wwwgooglecom<br><a href="http://www.google.com" target="_blank" rel="noopener">www.google.com</a><br>www google com</p>
-</blockquote>
-<p>参考链接：</p>
-<p><a href="http://blog.csdn.net/cnmcsdn456/article/details/27830671" target="_blank" rel="noopener">http://blog.csdn.net/cnmcsdn456/article/details/27830671</a></p>
-<p><a href="http://piziyin.blog.51cto.com/2391349/568426" target="_blank" rel="noopener">http://piziyin.blog.51cto.com/2391349/568426</a></p>
-<p><img src="../../../../images/python.png" alt="R"></p>
+<p>如果非教育网用户，可以改用阿里或者豆瓣的源，可能速度更快。链接附上：</p>
+<p>阿里云： <a href="http://mirrors.aliyun.com/pypi/simple/" target="_blank" rel="noopener">http://mirrors.aliyun.com/pypi/simple/</a><br>豆瓣： <a href="http://pypi.douban.com/simple/" target="_blank" rel="noopener">http://pypi.douban.com/simple/</a></p>
+<h2 id="conda更换国内源"><a href="#conda更换国内源" class="headerlink" title="conda更换国内源"></a>conda更换国内源</h2><p>直接在终端下运行修改命令即可：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls yes</span><br></pre></td></tr></table></figure>
+
+<p><img src="../../../../images/linux.png" alt="linux"></p>
 
 		  
       
@@ -270,11 +262,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
         		</li>
       		
 		</ul>
@@ -330,7 +318,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/21/Python%E5%AD%A6%E4%B9%A0-list%E5%92%8Cstr%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/24/pip%E5%92%8Cconda%E6%8D%A2%E6%BA%90/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -344,18 +332,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/02/21/Python%E5%AD%A6%E4%B9%A0-math%E6%A8%A1%E5%9D%97/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Python学习之math模块
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/02/21/PyMol%E9%AB%98%E8%B4%A8%E9%87%8F%E4%BD%9C%E5%9B%BE%E6%A1%88%E4%BE%8B%E4%B8%80%EF%BC%9Atransparency%20-%20%E5%89%AF%E6%9C%AC/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">PyMol高质量作图案例一：transparency使用</div>
+    <a href="/2020/02/24/Linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%80%BB%E7%BB%93/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux安装软件总结</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -396,7 +375,7 @@
 <script src="https://billts.site/js/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "Python学习之list和str相互转换",
+  id: "Linux安装软件总结",
   owner: 'dakkki',
   repo: 'dakkki.github.io',
   oauth: {

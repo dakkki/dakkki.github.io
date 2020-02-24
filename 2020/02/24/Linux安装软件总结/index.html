@@ -6,22 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Python学习之list和str相互转换 | dakki</title>
+  <title>Linux安装软件总结 | dakki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.str &gt;&gt;&gt;list  123str1 &#x3D; &quot;12345&quot;list1 &#x3D; list(str1)print list1  123str2 &#x3D; &quot;123 sjhid dhi&quot;list2 &#x3D; str2.split() #or list2 &#x3D; str2.split(&quot; &quot;)print list2  123str3 &#x3D; &quot;www.google.com&quot;list3 &#x3D; str3.spl">
+  <meta name="description" content="背景简述： 先说windows平台下的软件安装，最常见的是： 下载到exe的安装文件，然后双击，然后一路下一步，使用默认配置，最后点击安装完成即可。 而对于linux下，一般来说，至少在出现各种更方便的软件包管理工具之前，是没有： 双击某个软件包，然后就可以自动帮你安装，直到安装完成的。 而linux下，对于安装软件来说，主要分两种：  手动安装 二进制直接安装： 别人帮你编译好了，针对你的平台的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python学习之list和str相互转换">
-<meta property="og:url" content="http://yoursite.com/2020/02/21/Python%E5%AD%A6%E4%B9%A0-list%E5%92%8Cstr%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/index.html">
+<meta property="og:title" content="Linux安装软件总结">
+<meta property="og:url" content="http://yoursite.com/2020/02/24/Linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="dakki">
-<meta property="og:description" content="1.str &gt;&gt;&gt;list  123str1 &#x3D; &quot;12345&quot;list1 &#x3D; list(str1)print list1  123str2 &#x3D; &quot;123 sjhid dhi&quot;list2 &#x3D; str2.split() #or list2 &#x3D; str2.split(&quot; &quot;)print list2  123str3 &#x3D; &quot;www.google.com&quot;list3 &#x3D; str3.spl">
-<meta property="og:image" content="http://yoursite.com/images/python.png">
-<meta property="article:published_time" content="2020-02-21T08:43:05.226Z">
-<meta property="article:modified_time" content="2020-02-13T17:11:16.787Z">
+<meta property="og:description" content="背景简述： 先说windows平台下的软件安装，最常见的是： 下载到exe的安装文件，然后双击，然后一路下一步，使用默认配置，最后点击安装完成即可。 而对于linux下，一般来说，至少在出现各种更方便的软件包管理工具之前，是没有： 双击某个软件包，然后就可以自动帮你安装，直到安装完成的。 而linux下，对于安装软件来说，主要分两种：  手动安装 二进制直接安装： 别人帮你编译好了，针对你的平台的">
+<meta property="og:image" content="http://yoursite.com/images/linux.png">
+<meta property="article:published_time" content="2020-02-24T07:02:28.237Z">
+<meta property="article:modified_time" content="2020-02-24T07:51:56.169Z">
 <meta property="article:author" content="dakki">
-<meta property="article:tag" content="学习">
-<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/python.png">
+<meta name="twitter:image" content="http://yoursite.com/images/linux.png">
   
     <link rel="alternative" href="/atom.xml" title="dakki" type="application/atom+xml">
   
@@ -213,20 +212,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Python学习-list和str相互转换" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Linux安装软件总结" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Python学习之list和str相互转换
+      Linux安装软件总结
     </h1>
   
 
         
-        <a href="/2020/02/21/Python%E5%AD%A6%E4%B9%A0-list%E5%92%8Cstr%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/" class="archive-article-date">
-  	<time datetime="2020-02-21T08:43:05.226Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
+        <a href="/2020/02/24/Linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%80%BB%E7%BB%93/" class="archive-article-date">
+  	<time datetime="2020-02-24T07:02:28.237Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-24</time>
 </a>
         
       </header>
@@ -235,28 +234,103 @@
       
 		  
 		  
-  	        <p>1.str &gt;&gt;&gt;list </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">"12345"</span></span><br><span class="line">list1 = list(str1)</span><br><span class="line"><span class="keyword">print</span> list1</span><br></pre></td></tr></table></figure>
+  	        <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>简述：</p>
+<p>先说windows平台下的软件安装，最常见的是：</p>
+<p>下载到exe的安装文件，然后双击，然后一路下一步，使用默认配置，最后点击安装完成即可。</p>
+<p>而对于linux下，一般来说，至少在出现各种更方便的软件包管理工具之前，是没有：</p>
+<p>双击某个软件包，然后就可以自动帮你安装，直到安装完成的。</p>
+<p>而linux下，对于安装软件来说，主要分两种：</p>
+<ul>
+<li>手动安装<ul>
+<li>二进制直接安装：<ul>
+<li>别人帮你编译好了，针对你的平台的，二进制文件，你直接拿过来使用即可</li>
+</ul>
+</li>
+<li>源码编译后安装：<ul>
+<li>获得源码，然后自己配置，编译，成对应的二进制，然后再安装到你系统中</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>自动安装：<ul>
+<li>使用ubuntu下的apt等工具，自动实现某软件的安装<ul>
+<li>无需关心细节，直接apt-install xxx，即可实现常见的软件的安装</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>此处，主要介绍的是：</p>
+<p>手动安装，包括二进制和源码的两种不同方式。</p>
+<h1 id="Linux下安装软件的通用流程"><a href="#Linux下安装软件的通用流程" class="headerlink" title="Linux下安装软件的通用流程"></a>Linux下安装软件的通用流程</h1><h2 id="下载得到对应平台的二进制文件而直接安装"><a href="#下载得到对应平台的二进制文件而直接安装" class="headerlink" title="下载得到对应平台的二进制文件而直接安装"></a>下载得到对应平台的二进制文件而直接安装</h2><p>很多时候，对于某个软件，别人，已经提供了，针对某个平台，编译好的，二进制文件；</p>
+<p>如果此时，已经有了你的平台的二进制文件时，则可以直接下载后，直接（安装）使用，就不用麻烦再去编译了。</p>
+<p>此时，只剩下，把解压后的，二进制，所在的xxx/bin的路径，添加到linux的环境变量path中，即可。</p>
+<h2 id="配置编译安装之前要明白的事情"><a href="#配置编译安装之前要明白的事情" class="headerlink" title="配置编译安装之前要明白的事情"></a>配置编译安装之前要明白的事情</h2><p>一般的软件的源码包内，都有一些，关于介绍本软件，在配置，编译，安装等方面的注意事项。</p>
+<p>所以，在真正去配置编译安装之前，认真的看人家的说明，会在你后期遇到问题时，有很大帮助。</p>
+<p>最常见的几类说明文件有：</p>
+<p>（1）readme.txt或README</p>
+<p>最常见的，在你使用此程序之前，最好看看人家的说明。</p>
+<p>注意其中是否有哪些事项需要你注意的。</p>
+<p>以及，如何使用此程序等等。</p>
+<p>（2）INSTALL</p>
+<p>在编译完毕后，对于安装，有哪些注意事项，如何操作，等等。</p>
+<p>举例：</p>
+<p>（3）config.sub</p>
+<p>全称是：</p>
+<p>Configuration validation subroutine script</p>
+<p>其中，包含了：</p>
+<p>当我们在进行各种配置，比如交叉编译时，常用的–host或–target的值的时候，往往不太确定，当前支持哪些值</p>
+<p>这时候，就可以去config.sub去找找了。</p>
+<h2 id="下载源码后自己配置编译安装"><a href="#下载源码后自己配置编译安装" class="headerlink" title="下载源码后自己配置编译安装"></a>下载源码后自己配置编译安装</h2><p>最最通用的步骤是：</p>
+<ol>
+<li>./configure</li>
+<li>make</li>
+<li>make install</li>
+<li>make clean</li>
+</ol>
+<p>即所谓的：</p>
+<ol>
+<li>配置</li>
+<li>编译</li>
+<li>安装</li>
+<li>删除安装时产生的临时文件</li>
+</ol>
+<p>下面详细解释每个步骤。</p>
+<h2 id="获得软件的源码"><a href="#获得软件的源码" class="headerlink" title="获得软件的源码"></a>获得软件的源码</h2><p>简述：</p>
+<p>主要有两种方式：</p>
+<p>一种是，直接去官网，下载对应的源码包；</p>
+<p>一种是，去别的某些（镜像）网站，下载对应的源码包；</p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>如果没特殊需求，则直接去配置即可：</p>
+<p>./configure</p>
+<p>1.在配置之前，一般都可以通过：</p>
+<p>./configure –help</p>
+<p>可以查看到，当前软件，支持哪些详细的功能和配置</p>
+<p>即，可以通过，该软件特定的参数，去开启或关闭某个功能或特性等等。</p>
+<p>2.比较通用几个参数</p>
+<p>（1）–prefix=xxx：</p>
+<p>将你的程序，安装到哪里，等价于：</p>
+<p>windows中，在安装过程中，所要选择的程序的安装目录</p>
+<p>（2）交叉编译时，常会用到–host和–target</p>
+<h2 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h2><p>最常用的，就是直接make去编译即可：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str2 = <span class="string">"123 sjhid dhi"</span></span><br><span class="line">list2 = str2.split() <span class="comment">#or list2 = str2.split(" ")</span></span><br><span class="line"><span class="keyword">print</span> list2</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str3 = <span class="string">"www.google.com"</span></span><br><span class="line">list3 = str3.split(<span class="string">"."</span>)</span><br><span class="line"><span class="keyword">print</span> list3</span><br></pre></td></tr></table></figure>
 
-<p>输出为：</p>
-<blockquote>
-<p>[‘1’, ‘2’, ‘3’, ‘4’, ‘5’]<br>[‘123’, ‘sjhid’, ‘dhi’]<br>[‘www’, ‘google’, ‘com’]</p>
-</blockquote>
-<p>3.list &gt;&gt;&gt;str</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">str4 = <span class="string">""</span>.join(list3)</span><br><span class="line"><span class="keyword">print</span> str4</span><br><span class="line">str5 = <span class="string">"."</span>.join(list3)</span><br><span class="line"><span class="keyword">print</span> str5</span><br><span class="line">str6 = <span class="string">" "</span>.join(list3)</span><br><span class="line"><span class="keyword">print</span> str6</span><br></pre></td></tr></table></figure>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>一般都是直接安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make install</span><br></pre></td></tr></table></figure>
 
-<p>输出为：</p>
-<blockquote>
-<p>wwwgooglecom<br><a href="http://www.google.com" target="_blank" rel="noopener">www.google.com</a><br>www google com</p>
-</blockquote>
-<p>参考链接：</p>
-<p><a href="http://blog.csdn.net/cnmcsdn456/article/details/27830671" target="_blank" rel="noopener">http://blog.csdn.net/cnmcsdn456/article/details/27830671</a></p>
-<p><a href="http://piziyin.blog.51cto.com/2391349/568426" target="_blank" rel="noopener">http://piziyin.blog.51cto.com/2391349/568426</a></p>
-<p><img src="../../../../images/python.png" alt="R"></p>
+<p>即可，将生成的二进制文件，以及相关帮助文件（man文件），（sample，demo等）示例文件，安装到相应的位置。</p>
+<h2 id="删除安装时产生的临时文件"><a href="#删除安装时产生的临时文件" class="headerlink" title="删除安装时产生的临时文件"></a>删除安装时产生的临时文件</h2><p>使用如下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make clean</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="关于源码编译安装包安装好后，解压目录是否删除问题"><a href="#关于源码编译安装包安装好后，解压目录是否删除问题" class="headerlink" title="关于源码编译安装包安装好后，解压目录是否删除问题"></a>关于源码编译安装包安装好后，解压目录是否删除问题</h2><h6 id="通常情况下："><a href="#通常情况下：" class="headerlink" title="通常情况下："></a>通常情况下：</h6><p>tar.gz只是一种压缩方式，和deb,rpm只是封装的方式不同，安装后都可以删除，包括解压产生的目录。</p>
+<h6 id="特殊情况："><a href="#特殊情况：" class="headerlink" title="特殊情况："></a>特殊情况：</h6><p>有些软件包整合了必要的文件，安装时默认必须安装在压缩目录下，如amber。这种情况定不可删除解压后的目录，否则会把此软件从计算机中删除。</p>
+<h2 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h2><p>有些tar包带了uninstall脚本，则可用make uninstall命令卸载此软件（前提是这个安装目录没有被删除）</p>
+<p>没有包含uninstall脚本的tar包可以用第三方工具卸载软件，如新立得，Kinstall和Kife。</p>
+<p>make distclean: 这个命令是一个大锤 - 它删除所有的临时文件, 已安装的库和程序，以及几个第三方库. 这个命令的目的是将源代码树返回到原始状态， 就好像你刚刚提取了一个新版本的源代码。此命令适合上述amber软件的卸载。如果你计划更改您用于构建Amber的编译器,，你应该先运行这个命令。</p>
+<p><img src="../../../../images/linux.png" alt="linux"></p>
 
 		  
       
@@ -270,11 +344,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
         		</li>
       		
 		</ul>
@@ -330,7 +400,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/21/Python%E5%AD%A6%E4%B9%A0-list%E5%92%8Cstr%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/24/Linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%80%BB%E7%BB%93/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -344,18 +414,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/02/21/Python%E5%AD%A6%E4%B9%A0-math%E6%A8%A1%E5%9D%97/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/02/24/pip%E5%92%8Cconda%E6%8D%A2%E6%BA%90/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Python学习之math模块
+          Linux安装软件总结
         
       </div>
     </a>
   
   
-    <a href="/2020/02/21/PyMol%E9%AB%98%E8%B4%A8%E9%87%8F%E4%BD%9C%E5%9B%BE%E6%A1%88%E4%BE%8B%E4%B8%80%EF%BC%9Atransparency%20-%20%E5%89%AF%E6%9C%AC/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">PyMol高质量作图案例一：transparency使用</div>
+    <a href="/2020/02/23/%E8%9B%8B%E7%99%BD%E8%8D%AF%E7%89%A9%E5%A4%8D%E5%90%88%E7%89%A9%E4%B8%AD%E6%B0%A2%E9%94%AE%E5%BD%A2%E6%88%90%E6%9D%A1%E4%BB%B6/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">蛋白质-配体复合物中氢键形成条件</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -396,7 +466,7 @@
 <script src="https://billts.site/js/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "Python学习之list和str相互转换",
+  id: "Linux安装软件总结",
   owner: 'dakkki',
   repo: 'dakkki.github.io',
   oauth: {
