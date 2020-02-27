@@ -14,15 +14,15 @@
 <meta property="og:url" content="http://yoursite.com/2020/02/26/Python%E5%AD%A6%E4%B9%A0-Pandas%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97/index.html">
 <meta property="og:site_name" content="dakki">
 <meta property="og:description" content="前言  数据清洗是数据分析关键的一步，直接影响之后的处理工作 数据需要修改吗？有什么需要修改的吗？数据应该怎么调整才能适用于接下来的分析和挖掘？ 是一个迭代的过程，实际项目中可能需要不止一次地执行这些清洗操作 处理缺失数据：pd.fillna()，pd.dropna()   数据连接(pd.merge)  pd.merge 根据单个或多个键将不同DataFrame的行连接起来 类似数据库的连接操">
-<meta property="og:image" content="http://yoursite.com/images/python.png">
+<meta property="og:image" content="http://yoursite.com/images/pandasnumpy1.png">
 <meta property="article:published_time" content="2020-02-26T14:25:21.384Z">
-<meta property="article:modified_time" content="2020-02-26T16:14:08.878Z">
+<meta property="article:modified_time" content="2020-02-27T08:24:32.635Z">
 <meta property="article:author" content="dakki">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="Numpy">
 <meta property="article:tag" content="Pandas">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/python.png">
+<meta name="twitter:image" content="http://yoursite.com/images/pandasnumpy1.png">
   
     <link rel="alternative" href="/atom.xml" title="dakki" type="application/atom+xml">
   
@@ -409,7 +409,7 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># print(ser_obj.replace(1, -100))</span></span><br><span class="line"><span class="number">0</span>   <span class="number">-100</span></span><br><span class="line"><span class="number">1</span>      <span class="number">4</span></span><br><span class="line"><span class="number">2</span>      <span class="number">8</span></span><br><span class="line"><span class="number">3</span>      <span class="number">6</span></span><br><span class="line"><span class="number">4</span>      <span class="number">8</span></span><br><span class="line"><span class="number">5</span>      <span class="number">6</span></span><br><span class="line"><span class="number">6</span>      <span class="number">6</span></span><br><span class="line"><span class="number">7</span>      <span class="number">4</span></span><br><span class="line"><span class="number">8</span>      <span class="number">7</span></span><br><span class="line"><span class="number">9</span>      <span class="number">3</span></span><br><span class="line">dtype: int64</span><br><span class="line"></span><br><span class="line"><span class="comment"># print(ser_obj.replace([6, 8], -100))</span></span><br><span class="line"><span class="number">0</span>      <span class="number">1</span></span><br><span class="line"><span class="number">1</span>      <span class="number">4</span></span><br><span class="line"><span class="number">2</span>   <span class="number">-100</span></span><br><span class="line"><span class="number">3</span>   <span class="number">-100</span></span><br><span class="line"><span class="number">4</span>   <span class="number">-100</span></span><br><span class="line"><span class="number">5</span>   <span class="number">-100</span></span><br><span class="line"><span class="number">6</span>   <span class="number">-100</span></span><br><span class="line"><span class="number">7</span>      <span class="number">4</span></span><br><span class="line"><span class="number">8</span>      <span class="number">7</span></span><br><span class="line"><span class="number">9</span>      <span class="number">3</span></span><br><span class="line">dtype: int64</span><br><span class="line"></span><br><span class="line"><span class="comment"># print(ser_obj.replace([4, 7], [-100, -200]))</span></span><br><span class="line"><span class="number">0</span>      <span class="number">1</span></span><br><span class="line"><span class="number">1</span>   <span class="number">-100</span></span><br><span class="line"><span class="number">2</span>      <span class="number">8</span></span><br><span class="line"><span class="number">3</span>      <span class="number">6</span></span><br><span class="line"><span class="number">4</span>      <span class="number">8</span></span><br><span class="line"><span class="number">5</span>      <span class="number">6</span></span><br><span class="line"><span class="number">6</span>      <span class="number">6</span></span><br><span class="line"><span class="number">7</span>   <span class="number">-100</span></span><br><span class="line"><span class="number">8</span>   <span class="number">-200</span></span><br><span class="line"><span class="number">9</span>      <span class="number">3</span></span><br><span class="line">dtype: int64</span><br></pre></td></tr></table></figure>
 
 
-<p><img src="../../../../images/python.png" alt="python"></p>
+<p><img src="../../../../images/pandasnumpy1.png" alt="python"></p>
 
 		  
       
@@ -686,10 +686,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Matplotlib</a>
               </li>
              
@@ -718,15 +714,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">计算生物学</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">分子对接</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">ZDOCK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">计算生物学</a>
               </li>
             
             <div class="clearfix"></div>
