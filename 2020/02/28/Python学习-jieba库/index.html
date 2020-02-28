@@ -6,16 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 脚本 | dakki</title>
+  <title>实战案例：世界高峰数据可视化 | dakki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="😯😯">
-<meta property="og:type" content="website">
-<meta property="og:title" content="dakki">
-<meta property="og:url" content="http://yoursite.com/tags/%E8%84%9A%E6%9C%AC/index.html">
+  <meta name="description" content="jieba分词jieba分词是python写成的一个算是工业界的分词开源库，其github地址为：https:&#x2F;&#x2F;github.com&#x2F;fxsjy&#x2F;jieba，在Python里的安装方式： pip install jieba 简单示例： 12345678910111213import jieba as jbseg_list &#x3D; jb.cut(&quot;我来到北京清华大学&quot;, cut_all&#x3D;True)pr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="实战案例：世界高峰数据可视化">
+<meta property="og:url" content="http://yoursite.com/2020/02/28/Python%E5%AD%A6%E4%B9%A0-jieba%E5%BA%93/index.html">
 <meta property="og:site_name" content="dakki">
-<meta property="og:description" content="😯😯">
+<meta property="og:description" content="jieba分词jieba分词是python写成的一个算是工业界的分词开源库，其github地址为：https:&#x2F;&#x2F;github.com&#x2F;fxsjy&#x2F;jieba，在Python里的安装方式： pip install jieba 简单示例： 12345678910111213import jieba as jbseg_list &#x3D; jb.cut(&quot;我来到北京清华大学&quot;, cut_all&#x3D;True)pr">
+<meta property="og:image" content="http://yoursite.com/images/python.png">
+<meta property="article:published_time" content="2020-02-28T12:15:39.854Z">
+<meta property="article:modified_time" content="2020-02-28T15:04:33.365Z">
 <meta property="article:author" content="dakki">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Pandas">
+<meta property="article:tag" content="Matplotlib">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/python.png">
   
     <link rel="alternative" href="/atom.xml" title="dakki" type="application/atom+xml">
   
@@ -207,65 +214,193 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Python学习-jieba库" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/23/vmd-%E4%BE%9D%E6%8D%AEb%E5%9B%A0%E5%AD%90%E5%8F%AF%E8%A7%86%E5%8C%96/" class="archive-article-date">
-  	<time datetime="2020-02-23T11:28:53.792Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-23</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/23/vmd-%E4%BE%9D%E6%8D%AEb%E5%9B%A0%E5%AD%90%E5%8F%AF%E8%A7%86%E5%8C%96/">vmd依据B-factor进行可视化</a>
+    <h1 class="article-title" itemprop="name">
+      实战案例：世界高峰数据可视化
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/02/28/Python%E5%AD%A6%E4%B9%A0-jieba%E5%BA%93/" class="archive-article-date">
+  	<time datetime="2020-02-28T12:15:39.854Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+		  
+		  
+  	        <h1 id="jieba分词"><a href="#jieba分词" class="headerlink" title="jieba分词"></a>jieba分词</h1><p>jieba分词是python写成的一个算是工业界的分词开源库，其github地址为：<a href="https://github.com/fxsjy/jieba]" target="_blank" rel="noopener">https://github.com/fxsjy/jieba</a>，在Python里的安装方式： <code>pip install jieba</code></p>
+<p>简单示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> jieba <span class="keyword">as</span> jb</span><br><span class="line"></span><br><span class="line">seg_list = jb.cut(<span class="string">"我来到北京清华大学"</span>, cut_all=<span class="literal">True</span>)</span><br><span class="line">print(<span class="string">"全模式: "</span> + <span class="string">"/ "</span>.join(seg_list))  <span class="comment"># 全模式</span></span><br><span class="line"></span><br><span class="line">seg_list = jb.cut(<span class="string">"我来到北京清华大学"</span>, cut_all=<span class="literal">False</span>)</span><br><span class="line">print(<span class="string">"精确模式: "</span> + <span class="string">"/ "</span>.join(seg_list))  <span class="comment"># 精确模式</span></span><br><span class="line"></span><br><span class="line">seg_list = jb.cut(<span class="string">"他来到了网易杭研大厦"</span>)  </span><br><span class="line">print(<span class="string">"默认模式: "</span> + <span class="string">"/ "</span>.join(seg_list)) <span class="comment"># 默认是精确模式</span></span><br><span class="line"></span><br><span class="line">seg_list = jb.cut_for_search(<span class="string">"小明硕士毕业于中国科学院计算所，后在日本京都大学深造"</span>)  </span><br><span class="line">print(<span class="string">"搜索引擎模式: "</span> + <span class="string">"/ "</span>.join(seg_list)) <span class="comment"># 搜索引擎模式</span></span><br></pre></td></tr></table></figure>
+
+<p>执行结果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">全模式: 我/ 来到/ 北京/ 清华/ 清华大学/ 华大/ 大学</span><br><span class="line">精确模式: 我/ 来到/ 北京/ 清华大学</span><br><span class="line">默认模式: 他/ 来到/ 了/ 网易/ 杭研/ 大厦</span><br><span class="line">搜索引擎模式: 小明/ 硕士/ 毕业/ 于/ 中国/ 科学/ 学院/ 科学院/ 中国科学院/ 计算/ 计算所/ ，/ 后/ 在/ 日本/ 京都/ 大学/</span><br></pre></td></tr></table></figure>
+
+<h2 id="jieba分词的基本思路"><a href="#jieba分词的基本思路" class="headerlink" title="jieba分词的基本思路"></a>jieba分词的基本思路</h2><p>jieba分词对已收录词和未收录词都有相应的算法进行处理，其处理的思路很简单，主要的处理思路如下：</p>
+<ul>
+<li>加载词典dict.txt</li>
+<li>从内存的词典中构建该句子的DAG（有向无环图）</li>
+<li>对于词典中未收录词，使用HMM模型的viterbi算法尝试分词处理</li>
+<li>已收录词和未收录词全部分词完毕后，使用dp寻找DAG的最大概率路径 输出分词结果</li>
+</ul>
+<h2 id="案例："><a href="#案例：" class="headerlink" title="案例："></a>案例：</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> jieba</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">extract_text</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="comment"># 发送url请求并获取响应文件</span></span><br><span class="line">    page_source = requests.get(url).content</span><br><span class="line">    bs_source = BeautifulSoup(page_source, <span class="string">"lxml"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 解析出所有的p标签</span></span><br><span class="line">    report_text = bs_source.find_all(<span class="string">'p'</span>)</span><br><span class="line">    </span><br><span class="line">    text = <span class="string">''</span></span><br><span class="line">    <span class="comment"># 将p标签里的所有内容都保存到一个字符串里</span></span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> report_text:</span><br><span class="line">        text += p.get_text()</span><br><span class="line">        text += <span class="string">'\n'</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> text</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">word_frequency</span><span class="params">(text)</span>:</span></span><br><span class="line">    <span class="keyword">from</span> collections <span class="keyword">import</span> Counter</span><br><span class="line">    <span class="comment"># 返回所有分词后长度大于等于2 的词的列表</span></span><br><span class="line">    words = [word <span class="keyword">for</span> word <span class="keyword">in</span> jieba.cut(text, cut_all=<span class="literal">True</span>) <span class="keyword">if</span> len(word) &gt;= <span class="number">2</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Counter是一个简单的计数器，统计字符出现的个数</span></span><br><span class="line">    <span class="comment"># 分词后的列表将被转化为字典</span></span><br><span class="line">    c = Counter(words)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> word_freq <span class="keyword">in</span> c.most_common(<span class="number">10</span>):</span><br><span class="line">        word, freq = word_freq</span><br><span class="line">        print(word, freq)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    url = <span class="string">'http://www.gov.cn/premier/2017-03/16/content_5177940.htm'</span></span><br><span class="line">    text = extract_text(url)</span><br><span class="line">    word_frequency(text)</span><br></pre></td></tr></table></figure>
+
+<h2 id="执行结果："><a href="#执行结果：" class="headerlink" title="执行结果："></a>执行结果：</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Building prefix dict <span class="keyword">from</span> the default dictionary ...</span><br><span class="line">Loading model <span class="keyword">from</span> cache /var/folders/dp/wxmmld_s7k9gk_5fbhdcr2y00000gn/T/jieba.cache</span><br><span class="line">Loading model cost <span class="number">0.843</span> seconds.</span><br><span class="line">Prefix dict has been built succesfully.</span><br><span class="line">发展 <span class="number">134</span></span><br><span class="line">改革 <span class="number">85</span></span><br><span class="line">经济 <span class="number">71</span></span><br><span class="line">推进 <span class="number">66</span></span><br><span class="line">建设 <span class="number">59</span></span><br><span class="line">社会 <span class="number">49</span></span><br><span class="line">人民 <span class="number">47</span></span><br><span class="line">企业 <span class="number">46</span></span><br><span class="line">加强 <span class="number">46</span></span><br><span class="line">政策 <span class="number">46</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="流程介绍"><a href="#流程介绍" class="headerlink" title="流程介绍"></a>流程介绍</h2><p>​        首先，我们从网上抓取政府工作报告的全文。我将这个步骤封装在一个名叫extract_text的简单函数中，接受url作为参数。因为目标页面中报告的文本在所有的p元素中，所以我们只需要通过BeautifulSoup选中全部的p元素即可，最后返回一个包含了报告正文的字符串。<br>​        然后，我们就可以利用jieba进行分词了。这里，我们要选择全模式分词。jieba的全模式分词，即把句子中所有的可以成词的词语都扫描出来, 速度非常快，但是不能解决歧义。之所以这么做，是因为默认的精确模式下，返回的词频数据不准确。<br>​        分词时，还要注意去除标点符号，由于标点符号的长度都是1，所以我们添加一个len(word) &gt;= 2的条件即可。<br>​        最后，我们就可以利用Counter类，将分词后的列表快速地转化为字典，其中的键值就是键的出现次数，也就是这个词在全文中出现的次数。</p>
+<p><img src="../../../../images/python.png" alt="R"></p>
+
+		  
+      
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vmd</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">脚本</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Pandas</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Matplotlib</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/28/Python%E5%AD%A6%E4%B9%A0-jieba%E5%BA%93/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/02/27/%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%EF%BC%9A%E4%B8%96%E7%95%8C%E9%AB%98%E5%B3%B0%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">实战案例：世界高峰数据可视化</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+  <!-- 《添加版权声明 -->
+  
+  <!-- 添加版权声明》 -->
+  
 
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+<script src="https://billts.site/js/gitment.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "实战案例：世界高峰数据可视化",
+  owner: 'dakkki',
+  repo: 'dakkki.github.io',
+  oauth: {
+    client_id: '8b6559b847fd562cdba3',
+    client_secret: '70ec7e8e65b48f8e56081ce19f54b16e80b0969e',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
           </div>
         </div>
@@ -290,9 +425,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
