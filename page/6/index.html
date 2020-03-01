@@ -209,6 +209,237 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-linux学习-环境变量" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/">linux学习之环境变量</a>
+    </h1>
+  
+
+        
+        <a href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/" class="archive-article-date">
+  	<time datetime="2020-02-21T08:43:05.218Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+		  
+		  
+  	        <h3 id="方法一——变量"><a href="#方法一——变量" class="headerlink" title="方法一——变量"></a>方法一——变量</h3><p>先赋值变量</p>
+  	        
+          </p>
+        
+  	      
+      
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+    <article id="post-linux学习-查看硬件信息" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E6%9F%A5%E7%9C%8B%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/">linux学习之查看硬件信息</a>
+    </h1>
+  
+
+        
+        <a href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E6%9F%A5%E7%9C%8B%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/" class="archive-article-date">
+  	<time datetime="2020-02-21T08:43:05.217Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+		  
+		  
+  	        <h5 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> uname -a               <span class="comment"># 查看内核/操作系统/CPU信息</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> head -n 1 /etc/issue   <span class="comment"># 查看操作系统版本</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> cat /proc/cpuinfo      <span class="comment"># 查看CPU信息</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hostname               <span class="comment"># 查看计算机名</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> lspci -tv              <span class="comment"># 列出所有PCI设备（yum install pciutils）</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> lsusb -tv              <span class="comment"># 列出所有USB设备</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> lsmod                  <span class="comment"># 列出加载的内核模块</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> env                    <span class="comment"># 查看环境变量</span></span></span><br></pre></td></tr></table></figure>
+  	        
+          </p>
+        
+  	      
+      
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E6%9F%A5%E7%9C%8B%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+    <article id="post-linux学习-常见不易记命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E5%B8%B8%E8%A7%81%E4%B8%8D%E6%98%93%E8%AE%B0%E5%91%BD%E4%BB%A4/">linux学习之常用不易记命令</a>
+    </h1>
+  
+
+        
+        <a href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E5%B8%B8%E8%A7%81%E4%B8%8D%E6%98%93%E8%AE%B0%E5%91%BD%E4%BB%A4/" class="archive-article-date">
+  	<time datetime="2020-02-21T08:43:05.215Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+		  
+		  
+  	        <h3 id="命令——read"><a href="#命令——read" class="headerlink" title="命令——read"></a>命令——read</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">echo</span> <span class="string">"输入网址："</span></span><br><span class="line">$ <span class="built_in">read</span> website <span class="comment"># 这里会默认换行</span></span><br><span class="line"><span class="comment"># 键盘键入字符</span></span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">"你输入的网址是：<span class="variable">$website</span>"</span></span><br><span class="line"><span class="comment"># read命令相当于把变量赋值给website</span></span><br></pre></td></tr></table></figure>
+  	        
+          </p>
+        
+  	      
+      
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/02/21/linux%E5%AD%A6%E4%B9%A0-%E5%B8%B8%E8%A7%81%E4%B8%8D%E6%98%93%E8%AE%B0%E5%91%BD%E4%BB%A4/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
     <article id="post-linux学习-后台运行" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -625,7 +856,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">PyMol</a>
+                <a href="javascript:void(0)" class="js-tag color1">Numpy</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -633,11 +864,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Numpy</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+                <a href="javascript:void(0)" class="js-tag color1">PyMol</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -649,11 +876,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">R</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vmd</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">脚本</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -670,14 +909,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">ZDOCK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vmd</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">脚本</a>
               </li>
              
               <li class="article-tag-list-item">
