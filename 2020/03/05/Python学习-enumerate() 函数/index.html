@@ -6,22 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>数据分析实战案例：2016年美国总统大选民意调查数据统计(Numpy载入数据部分) | dakki</title>
+  <title>enumerate() 函数 | dakki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="2016年美国大选民意调查数据统计： 项目地址：https:&#x2F;&#x2F;www.kaggle.com&#x2F;fivethirtyeight&#x2F;2016-election-polls 该数据集包含了2015年11月至2016年11月期间对于2016美国大选的选票数据，共27列数据  示例代码1 ：123456789101112131415161718# loadtxtimport numpy as np# csv">
+  <meta name="description" content="描述enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中。 语法以下是 enumerate() 方法的语法: 1enumerate(sequence, [start&#x3D;0])  参数 sequence – 一个序列、迭代器或其他支持迭代对象。 start – 下标起始位置。  实例以下展示了使用 enum">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数据分析实战案例：2016年美国总统大选民意调查数据统计(Numpy载入数据部分)">
-<meta property="og:url" content="http://yoursite.com/2020/02/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%EF%BC%9A2016%E5%B9%B4%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E6%B0%91%E6%84%8F%E8%B0%83%E6%9F%A5%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1(Numpy%E8%BD%BD%E5%85%A5%E6%95%B0%E6%8D%AE%E9%83%A8%E5%88%86)/index.html">
+<meta property="og:title" content="enumerate() 函数">
+<meta property="og:url" content="http://yoursite.com/2020/03/05/Python%E5%AD%A6%E4%B9%A0-enumerate()%20%E5%87%BD%E6%95%B0/index.html">
 <meta property="og:site_name" content="dakki">
-<meta property="og:description" content="2016年美国大选民意调查数据统计： 项目地址：https:&#x2F;&#x2F;www.kaggle.com&#x2F;fivethirtyeight&#x2F;2016-election-polls 该数据集包含了2015年11月至2016年11月期间对于2016美国大选的选票数据，共27列数据  示例代码1 ：123456789101112131415161718# loadtxtimport numpy as np# csv">
-<meta property="og:image" content="http://yoursite.com/images/numpy1.png">
-<meta property="article:published_time" content="2020-02-25T11:05:24.995Z">
-<meta property="article:modified_time" content="2020-02-27T14:10:52.982Z">
+<meta property="og:description" content="描述enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中。 语法以下是 enumerate() 方法的语法: 1enumerate(sequence, [start&#x3D;0])  参数 sequence – 一个序列、迭代器或其他支持迭代对象。 start – 下标起始位置。  实例以下展示了使用 enum">
+<meta property="og:image" content="http://yoursite.com/images/python.png">
+<meta property="article:published_time" content="2020-03-05T11:45:23.081Z">
+<meta property="article:modified_time" content="2020-03-05T11:51:10.443Z">
 <meta property="article:author" content="dakki">
-<meta property="article:tag" content="Numpy">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/numpy1.png">
+<meta name="twitter:image" content="http://yoursite.com/images/python.png">
   
     <link rel="alternative" href="/atom.xml" title="dakki" type="application/atom+xml">
   
@@ -213,20 +212,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-数据分析实战案例：2016年美国总统大选民意调查数据统计(Numpy载入数据部分)" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Python学习-enumerate() 函数" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      数据分析实战案例：2016年美国总统大选民意调查数据统计(Numpy载入数据部分)
+      enumerate() 函数
     </h1>
   
 
         
-        <a href="/2020/02/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%EF%BC%9A2016%E5%B9%B4%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E6%B0%91%E6%84%8F%E8%B0%83%E6%9F%A5%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1(Numpy%E8%BD%BD%E5%85%A5%E6%95%B0%E6%8D%AE%E9%83%A8%E5%88%86)/" class="archive-article-date">
-  	<time datetime="2020-02-25T11:05:24.995Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-25</time>
+        <a href="/2020/03/05/Python%E5%AD%A6%E4%B9%A0-enumerate()%20%E5%87%BD%E6%95%B0/" class="archive-article-date">
+  	<time datetime="2020-03-05T11:45:23.081Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-05</time>
 </a>
         
       </header>
@@ -235,18 +234,29 @@
       
 		  
 		  
-  	        <h1 id="2016年美国大选民意调查数据统计："><a href="#2016年美国大选民意调查数据统计：" class="headerlink" title="2016年美国大选民意调查数据统计："></a>2016年美国大选民意调查数据统计：</h1><ul>
-<li>项目地址：<a href="https://www.kaggle.com/fivethirtyeight/2016-election-polls" target="_blank" rel="noopener">https://www.kaggle.com/fivethirtyeight/2016-election-polls</a></li>
-<li>该数据集包含了2015年11月至2016年11月期间对于2016美国大选的选票数据，共27列数据</li>
+  	        <h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中。</p>
+<h1 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h1><p>以下是 enumerate() 方法的语法:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enumerate(sequence, [start=<span class="number">0</span>])</span><br></pre></td></tr></table></figure>
+
+<h1 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h1><ul>
+<li>sequence – 一个序列、迭代器或其他支持迭代对象。</li>
+<li>start – 下标起始位置。</li>
 </ul>
-<h1 id="示例代码1-："><a href="#示例代码1-：" class="headerlink" title="示例代码1 ："></a>示例代码1 ：</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># loadtxt</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="comment"># csv 名逗号分隔值文件</span></span><br><span class="line"></span><br><span class="line">filename = <span class="string">'./presidential_polls.csv'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过loadtxt()读取本地csv文件 </span></span><br><span class="line"></span><br><span class="line">data_array = np.loadtxt(filename,      <span class="comment"># 文件名</span></span><br><span class="line">                        delimiter=<span class="string">','</span>, <span class="comment"># 分隔符</span></span><br><span class="line">                        dtype=str,     <span class="comment"># 数据类型，数据是Unicode字符串</span></span><br><span class="line">                        usecols=(<span class="number">0</span>,<span class="number">2</span>,<span class="number">3</span>)) <span class="comment"># 指定读取的列号</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 打印ndarray数据，保留第一行</span></span><br><span class="line"></span><br><span class="line">print(data_array, data_array.shape)</span><br></pre></td></tr></table></figure>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>以下展示了使用 enumerate() 方法的实例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;seasons = [<span class="string">'Spring'</span>, <span class="string">'Summer'</span>, <span class="string">'Fall'</span>, <span class="string">'Winter'</span>] </span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>list(enumerate(seasons)) [(<span class="number">0</span>, <span class="string">'Spring'</span>), (<span class="number">1</span>, <span class="string">'Summer'</span>), (<span class="number">2</span>, <span class="string">'Fall'</span>), (<span class="number">3</span>, <span class="string">'Winter'</span>)] </span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>list(enumerate(seasons, start=<span class="number">1</span>))       <span class="comment"># 下标从 1 开始 </span></span><br><span class="line">[(<span class="number">1</span>, <span class="string">'Spring'</span>), (<span class="number">2</span>, <span class="string">'Summer'</span>), (<span class="number">3</span>, <span class="string">'Fall'</span>), (<span class="number">4</span>, <span class="string">'Winter'</span>)]</span><br></pre></td></tr></table></figure>
 
-<p>运行结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[[<span class="string">"b'cycle'"</span> <span class="string">"b'type'"</span> <span class="string">"b'matchup'"</span>]</span><br><span class="line"> [<span class="string">"b'2016'"</span> <span class="string">'b\'"polls-plus"\''</span> <span class="string">'b\'"Clinton vs. Trump vs. Johnson"\''</span>]</span><br><span class="line"> [<span class="string">"b'2016'"</span> <span class="string">'b\'"polls-plus"\''</span> <span class="string">'b\'"Clinton vs. Trump vs. Johnson"\''</span>]</span><br><span class="line"> ..., </span><br><span class="line"> [<span class="string">"b'2016'"</span> <span class="string">'b\'"polls-only"\''</span> <span class="string">'b\'"Clinton vs. Trump vs. Johnson"\''</span>]</span><br><span class="line"> [<span class="string">"b'2016'"</span> <span class="string">'b\'"polls-only"\''</span> <span class="string">'b\'"Clinton vs. Trump vs. Johnson"\''</span>]</span><br><span class="line"> [<span class="string">"b'2016'"</span> <span class="string">'b\'"polls-only"\''</span> <span class="string">'b\'"Clinton vs. Trump vs. Johnson"\''</span>]] (<span class="number">10237</span>, <span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>普通的 for 循环</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;i = <span class="number">0</span> </span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>seq = [<span class="string">'one'</span>, <span class="string">'two'</span>, <span class="string">'three'</span>] </span><br><span class="line">&gt;&gt;&gt;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> element <span class="keyword">in</span> seq: </span><br><span class="line"><span class="meta">... </span>    <span class="keyword">print</span> i, seq[i] </span><br><span class="line"><span class="meta">... </span>    i +=<span class="number">1</span> </span><br><span class="line"><span class="meta">... </span> </span><br><span class="line"><span class="number">0</span> one </span><br><span class="line"><span class="number">1</span> two </span><br><span class="line"><span class="number">2</span> three</span><br></pre></td></tr></table></figure>
 
-<h1 id="示例代码2："><a href="#示例代码2：" class="headerlink" title="示例代码2："></a>示例代码2：</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="comment"># 读取列名，即第一行数据</span></span><br><span class="line"><span class="keyword">with</span> open(filename, <span class="string">'r'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    col_names_str = f.readline()[:<span class="number">-1</span>] <span class="comment"># [:-1]表示不读取末尾的换行符'\n'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 将字符串拆分，并组成列表</span></span><br><span class="line">col_name_lst = col_names_str.split(<span class="string">','</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用的列名：结束时间，克林顿原始票数，川普原始票数，克林顿调整后票数，川普调整后票数</span></span><br><span class="line">use_col_name_lst = [<span class="string">'enddate'</span>, <span class="string">'rawpoll_clinton'</span>, <span class="string">'rawpoll_trump'</span>,<span class="string">'adjpoll_clinton'</span>, <span class="string">'adjpoll_trump'</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取相应列名的索引号</span></span><br><span class="line">use_col_index_lst = [col_name_lst.index(use_col_name) <span class="keyword">for</span> use_col_name <span class="keyword">in</span> use_col_name_lst]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过genfromtxt()读取本地csv文件，</span></span><br><span class="line">data_array = np.genfromtxt(filename,      <span class="comment"># 文件名</span></span><br><span class="line">                        delimiter=<span class="string">','</span>, <span class="comment"># 分隔符</span></span><br><span class="line">                        <span class="comment">#skiprows=1,    # 跳过第一行，即跳过列名</span></span><br><span class="line">                        dtype=str,     <span class="comment"># 数据类型，数据不再是Unicode字符串</span></span><br><span class="line">                        usecols=use_col_index_lst)<span class="comment"># 指定读取的列索引号</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># genfromtxt() 不能通过 skiprows 跳过第一行的</span></span><br><span class="line"><span class="comment"># ['enddate' 'rawpoll_clinton' 'rawpoll_trump' 'adjpoll_clinton' 'adjpoll_trump']</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 去掉第一行</span></span><br><span class="line">data_array = data_array[<span class="number">1</span>:]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打印ndarray数据</span></span><br><span class="line">print(data_array, data_array.shape)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>for 循环使用 enumerate</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;seq = [<span class="string">'one'</span>, <span class="string">'two'</span>, <span class="string">'three'</span>] </span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> i, element <span class="keyword">in</span> enumerate(seq): </span><br><span class="line"><span class="meta">... </span>    <span class="keyword">print</span> i, element </span><br><span class="line"><span class="meta">... </span> </span><br><span class="line"><span class="number">0</span> one </span><br><span class="line"><span class="number">1</span> two </span><br><span class="line"><span class="number">2</span> three</span><br></pre></td></tr></table></figure>
 
-<p><img src="../../../../images/numpy1.png" alt="R"></p>
+
+<p><img src="../../../../images/python.png" alt="R"></p>
 
 		  
       
@@ -259,10 +269,6 @@
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Numpy</a>
-        		</li>
-      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
         		</li>
@@ -320,7 +326,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%EF%BC%9A2016%E5%B9%B4%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E6%B0%91%E6%84%8F%E8%B0%83%E6%9F%A5%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1(Numpy%E8%BD%BD%E5%85%A5%E6%95%B0%E6%8D%AE%E9%83%A8%E5%88%86)/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/05/Python%E5%AD%A6%E4%B9%A0-enumerate()%20%E5%87%BD%E6%95%B0/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -334,18 +340,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/02/25/Python%E5%AD%A6%E4%B9%A0-Pandas%E4%B9%8BTimestamp%E3%80%81Period%E3%80%81Timedelta%E4%BB%8B%E7%BB%8D/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Pandas之Timestamp、Period、Timedelta介绍
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/02/25/Python%E5%AD%A6%E4%B9%A0-Numpy%E8%AE%A1%E7%AE%97%E5%87%BD%E6%95%B0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Numpy计算函数</div>
+    <a href="/2020/03/01/%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%EF%BC%9A%E7%BE%8E%E5%9B%BD%E5%90%84%E5%B7%9E%E4%BA%BA%E5%8F%A3%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BB%A5%E5%8F%8A%E5%B7%9E%E7%9A%84%E9%9D%A2%E7%A7%AF%E7%9B%B8%E5%85%B3%E7%9A%84%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86%E5%8F%8A%E5%88%86%E6%9E%90/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">美国各州人口的数据以及州的面积相关的数据预处理及分析</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -386,7 +383,7 @@
 <script src="https://billts.site/js/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "数据分析实战案例：2016年美国总统大选民意调查数据统计(Numpy载入数据部分)",
+  id: "enumerate() 函数",
   owner: 'dakkki',
   repo: 'dakkki.github.io',
   oauth: {
