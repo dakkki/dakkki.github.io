@@ -6,16 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020/2 | dakki</title>
+  <title>strip用法 | dakki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="😯😯">
-<meta property="og:type" content="website">
-<meta property="og:title" content="dakki">
-<meta property="og:url" content="http://yoursite.com/archives/2020/02/page/2/index.html">
+  <meta name="description" content="描述strip属于字符串的用法，如果想用于list应该如何操作？这里以读取一个文本去掉换行符’\n’为例 操作首先在cmd下使用下面的命令找到配置文件的位置： 123f &#x3D; open(&#39;.&#x2F;dakki.txt&#39;,&#39;r&#39;)list1 &#x3D; [i.strip(&#39;\n&#39;) for i in f.readlines()]print(list1)  结果如下 1[&#39;dak&#39;, &#39;che">
+<meta property="og:type" content="article">
+<meta property="og:title" content="strip用法">
+<meta property="og:url" content="http://yoursite.com/2020/03/06/Python%E5%AD%A6%E4%B9%A0-strip/index.html">
 <meta property="og:site_name" content="dakki">
-<meta property="og:description" content="😯😯">
+<meta property="og:description" content="描述strip属于字符串的用法，如果想用于list应该如何操作？这里以读取一个文本去掉换行符’\n’为例 操作首先在cmd下使用下面的命令找到配置文件的位置： 123f &#x3D; open(&#39;.&#x2F;dakki.txt&#39;,&#39;r&#39;)list1 &#x3D; [i.strip(&#39;\n&#39;) for i in f.readlines()]print(list1)  结果如下 1[&#39;dak&#39;, &#39;che">
+<meta property="og:image" content="http://yoursite.com/images/python.png">
+<meta property="article:published_time" content="2020-03-06T13:36:25.841Z">
+<meta property="article:modified_time" content="2020-03-06T13:41:38.226Z">
 <meta property="article:author" content="dakki">
+<meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/python.png">
   
     <link rel="alternative" href="/atom.xml" title="dakki" type="application/atom+xml">
   
@@ -207,162 +212,44 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Python学习-strip" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      strip用法
+    </h1>
+  
+
+        
+        <a href="/2020/03/06/Python%E5%AD%A6%E4%B9%A0-strip/" class="archive-article-date">
+  	<time datetime="2020-03-06T13:36:25.841Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-06</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+		  
+		  
+  	        <h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>strip属于字符串的用法，如果想用于list应该如何操作？这里以读取一个文本去掉换行符’\n’为例</p>
+<h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><p>首先在cmd下使用下面的命令找到配置文件的位置：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">f = open(<span class="string">'./dakki.txt'</span>,<span class="string">'r'</span>)</span><br><span class="line">list1 = [i.strip(<span class="string">'\n'</span>) <span class="keyword">for</span> i <span class="keyword">in</span> f.readlines()]</span><br><span class="line">print(list1)</span><br></pre></td></tr></table></figure>
+
+<p>结果如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;dak&#39;, &#39;chen&#39;, &#39;dao&#39;, &#39;xing&#39;]</span><br></pre></td></tr></table></figure>
+
+<p><img src="../../../../images/python.png" alt="R"></p>
+
+		  
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/25/Python%E5%AD%A6%E4%B9%A0-Pandas%E4%B9%8BTimestamp%E3%80%81Period%E3%80%81Timedelta%E4%BB%8B%E7%BB%8D/" class="archive-article-date">
-  	<time datetime="2020-02-25T12:53:07.529Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/25/Python%E5%AD%A6%E4%B9%A0-Pandas%E4%B9%8BTimestamp%E3%80%81Period%E3%80%81Timedelta%E4%BB%8B%E7%BB%8D/">Pandas之Timestamp、Period、Timedelta介绍</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Pandas</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%EF%BC%9A2016%E5%B9%B4%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E6%B0%91%E6%84%8F%E8%B0%83%E6%9F%A5%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1(Numpy%E8%BD%BD%E5%85%A5%E6%95%B0%E6%8D%AE%E9%83%A8%E5%88%86)/" class="archive-article-date">
-  	<time datetime="2020-02-25T11:05:24.995Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%EF%BC%9A2016%E5%B9%B4%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E6%B0%91%E6%84%8F%E8%B0%83%E6%9F%A5%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1(Numpy%E8%BD%BD%E5%85%A5%E6%95%B0%E6%8D%AE%E9%83%A8%E5%88%86)/">数据分析实战案例：2016年美国总统大选民意调查数据统计(Numpy载入数据部分)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Numpy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/25/Python%E5%AD%A6%E4%B9%A0-Numpy%E8%AE%A1%E7%AE%97%E5%87%BD%E6%95%B0/" class="archive-article-date">
-  	<time datetime="2020-02-25T10:48:52.161Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/25/Python%E5%AD%A6%E4%B9%A0-Numpy%E8%AE%A1%E7%AE%97%E5%87%BD%E6%95%B0/">Numpy计算函数</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Numpy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/24/pip%E5%92%8Cconda%E6%8D%A2%E6%BA%90/" class="archive-article-date">
-  	<time datetime="2020-02-24T15:08:38.929Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/24/pip%E5%92%8Cconda%E6%8D%A2%E6%BA%90/">pip和conda换源</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -374,260 +261,124 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/06/Python%E5%AD%A6%E4%B9%A0-strip/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/24/Linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2020-02-24T07:02:28.237Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-24</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/06/Python%E5%AD%A6%E4%B9%A0-Jupyter%20Notebook%E8%AE%BE%E7%BD%AE%E9%BB%98%E8%AE%A4%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Jupyter Notebook设置默认打开目录</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/24/Linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%80%BB%E7%BB%93/">Linux安装软件总结</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/23/%E8%9B%8B%E7%99%BD%E8%8D%AF%E7%89%A9%E5%A4%8D%E5%90%88%E7%89%A9%E4%B8%AD%E6%B0%A2%E9%94%AE%E5%BD%A2%E6%88%90%E6%9D%A1%E4%BB%B6/" class="archive-article-date">
-  	<time datetime="2020-02-23T13:51:58.813Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-23</time>
-</a>
-        </div>
-    	 
+  <!-- 《添加版权声明 -->
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/23/%E8%9B%8B%E7%99%BD%E8%8D%AF%E7%89%A9%E5%A4%8D%E5%90%88%E7%89%A9%E4%B8%AD%E6%B0%A2%E9%94%AE%E5%BD%A2%E6%88%90%E6%9D%A1%E4%BB%B6/">蛋白质-配体复合物中氢键形成条件</a>
-    </h1>
+  <!-- 添加版权声明》 -->
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">计算生物学</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/23/PyMol%E7%BB%98%E7%94%BB%E6%A8%AA%E5%88%87%E9%9D%A2%E5%9B%BE/" class="archive-article-date">
-  	<time datetime="2020-02-23T13:11:29.792Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-23</time>
-</a>
-        </div>
-    	 
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+<script src="https://billts.site/js/gitment.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "strip用法",
+  owner: 'dakkki',
+  repo: 'dakkki.github.io',
+  oauth: {
+    client_id: '8b6559b847fd562cdba3',
+    client_secret: '70ec7e8e65b48f8e56081ce19f54b16e80b0969e',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/23/PyMol%E7%BB%98%E7%94%BB%E6%A8%AA%E5%88%87%E9%9D%A2%E5%9B%BE/">PyMol绘画横切面图</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">脚本模板</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">PyMol</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/23/vmd-%E4%BE%9D%E6%8D%AEb%E5%9B%A0%E5%AD%90%E5%8F%AF%E8%A7%86%E5%8C%96/" class="archive-article-date">
-  	<time datetime="2020-02-23T11:28:53.792Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/23/vmd-%E4%BE%9D%E6%8D%AEb%E5%9B%A0%E5%AD%90%E5%8F%AF%E8%A7%86%E5%8C%96/">vmd依据B-factor进行可视化</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vmd</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">脚本</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/23/Python%E8%AE%B0%E5%BD%95-%E4%BA%8C%E8%BF%9B%E5%88%B6%EF%BC%8C%E5%8D%81%E8%BF%9B%E5%88%B6%EF%BC%8C%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/" class="archive-article-date">
-  	<time datetime="2020-02-23T07:22:58.940Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/23/Python%E8%AE%B0%E5%BD%95-%E4%BA%8C%E8%BF%9B%E5%88%B6%EF%BC%8C%E5%8D%81%E8%BF%9B%E5%88%B6%EF%BC%8C%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/">python记录之二进制，十进制，十六进制转换</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/22/Linux%E8%AE%B0%E5%BD%95-%E6%9F%A5%E7%9C%8B%E7%A1%AC%E7%9B%98%E4%BF%A1%E6%81%AF/" class="archive-article-date">
-  	<time datetime="2020-02-22T10:50:32.907Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/22/Linux%E8%AE%B0%E5%BD%95-%E6%9F%A5%E7%9C%8B%E7%A1%AC%E7%9B%98%E4%BF%A1%E6%81%AF/">Linux记录之查看硬盘信息</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2020/02/">上一页</a><a class="page-number" href="/archives/2020/02/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2020/02/page/3/">3</a><a class="page-number" href="/archives/2020/02/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2020/02/page/6/">6</a><a class="extend next" rel="next" href="/archives/2020/02/page/3/">下一页</a>
-    </nav>
-  
-
 
           </div>
         </div>
@@ -652,8 +403,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
