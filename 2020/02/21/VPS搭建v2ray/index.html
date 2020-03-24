@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>v2ray搭建详细图文教程 | dakki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="篇首语：科学上网（fanqiang）的大体原理都是通过一台在防火墙之外的VPS作为媒介，实现国内网络和防火墙之外的网络之间的互通，因此一台不受防火墙骚扰的VPS是必备的。而v2ray负责的是你的网络和VPS之间的网络通信功能。借助V2ray你可以实现透过防火墙，自由穿梭于网络。你需要做的是分别在你的设备（手机、PC等）和VPS上分别部署一下V2ray。  搭建v2ray的步骤大体如下：  购买一">
+  <meta name="description" content="篇首语：科学上网（fanqiang）的大体原理都是通过一台在防火墙之外的VPS作为媒介，实现国内网络和防火墙之外的网络之间的互通，因此一台不受防火墙骚扰的VPS是必备的。而v2ray负责的是你的网络和VPS之间的网络通信功能。借助V2ray你可以实现透过防火墙，自由穿梭于网络。你需要做的是分别在你的设备（手机、PC等）和VPS上分别部署一下V2ray。  第一种方法搭建v2ray的步骤大体如下：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="v2ray搭建详细图文教程">
 <meta property="og:url" content="http://yoursite.com/2020/02/21/VPS%E6%90%AD%E5%BB%BAv2ray/index.html">
 <meta property="og:site_name" content="dakki">
-<meta property="og:description" content="篇首语：科学上网（fanqiang）的大体原理都是通过一台在防火墙之外的VPS作为媒介，实现国内网络和防火墙之外的网络之间的互通，因此一台不受防火墙骚扰的VPS是必备的。而v2ray负责的是你的网络和VPS之间的网络通信功能。借助V2ray你可以实现透过防火墙，自由穿梭于网络。你需要做的是分别在你的设备（手机、PC等）和VPS上分别部署一下V2ray。  搭建v2ray的步骤大体如下：  购买一">
+<meta property="og:description" content="篇首语：科学上网（fanqiang）的大体原理都是通过一台在防火墙之外的VPS作为媒介，实现国内网络和防火墙之外的网络之间的互通，因此一台不受防火墙骚扰的VPS是必备的。而v2ray负责的是你的网络和VPS之间的网络通信功能。借助V2ray你可以实现透过防火墙，自由穿梭于网络。你需要做的是分别在你的设备（手机、PC等）和VPS上分别部署一下V2ray。  第一种方法搭建v2ray的步骤大体如下：">
 <meta property="og:image" content="https://img.snailshub.com/images/2019/02/10/new-vmess-config.jpg">
 <meta property="og:image" content="https://img.snailshub.com/images/2019/02/10/vmess-windows-client.jpg">
 <meta property="og:image" content="https://img.snailshub.com/images/2019/02/10/v2ray-pac-config.jpg">
 <meta property="og:image" content="https://img.snailshub.com/images/2019/12/31/build-v2ray-2019-12-31.png">
 <meta property="og:image" content="http://yoursite.com/images/linux.png">
 <meta property="article:published_time" content="2020-02-21T08:43:05.269Z">
-<meta property="article:modified_time" content="2020-02-21T07:44:11.323Z">
+<meta property="article:modified_time" content="2020-03-24T10:08:26.066Z">
 <meta property="article:author" content="dakki">
 <meta property="article:tag" content="VPS">
 <meta property="article:tag" content="科学上网">
@@ -242,7 +242,7 @@
   	        <blockquote>
 <p>篇首语：科学上网（fanqiang）的大体原理都是通过一台在防火墙之外的VPS作为媒介，实现国内网络和防火墙之外的网络之间的互通，因此一台不受防火墙骚扰的VPS是必备的。而v2ray负责的是你的网络和VPS之间的网络通信功能。借助V2ray你可以实现透过防火墙，自由穿梭于网络。你需要做的是分别在你的设备（手机、PC等）和VPS上分别部署一下V2ray。</p>
 </blockquote>
-<p>搭建v2ray的步骤大体如下：</p>
+<h1 id="第一种方法"><a href="#第一种方法" class="headerlink" title="第一种方法"></a>第一种方法</h1><p>搭建v2ray的步骤大体如下：</p>
 <ul>
 <li>购买一个VPS，购买后你会获得VPS的IP、root用户及密码、SSH端口等信息；</li>
 <li>登录VPS，可以借助<code>Xshell</code>这个工具；</li>
@@ -327,6 +327,29 @@
 <li><a href="https://www.4spaces.org/digitalocean-cenetos-7-bbr-shadowsocksr/" target="_blank" rel="noopener">Digitalocean主机上CenetOS 7环境下安装暴力魔改版BBR和shadowsocksr全过程记录(2018.8.7)</a>；</li>
 </ol>
 <p>转载至：<a href="https://www.4spaces.org/build-v2ray-from-0-to-1/" target="_blank" rel="noopener">2020年最新v2ray搭建详细图文教程(从小白到老炮)</a></p>
+<h1 id="第二种方法"><a href="#第二种方法" class="headerlink" title="第二种方法"></a>第二种方法</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>各位自备vps!（我这里使用的vultr）</p>
+<p>Debian 9（推荐）自带bbr<br>Ubuntu 14<br>Ubuntu 16<br>CentOS 7</p>
+<p>这里使用大佬的V2Ray一键安装脚本</p>
+<h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash &lt;(curl -s -L https:&#x2F;&#x2F;git.io&#x2F;v2ray.sh)</span><br></pre></td></tr></table></figure>
+
+<p>全部用默认选项就ok(如果还需要ss的自己打开)</p>
+<p>如果你是菜鸡 请看这篇文章 <a href="https://github.com/233boy/v2ray/wiki/V2Ray搭建详细图文教程" target="_blank" rel="noopener">V2Ray搭建详细图文教程</a></p>
+<h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><p>输入 <strong>v2ray url</strong> 命令生成 vmess URL 链接</p>
+<h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><p>下载客户端从剪贴板导入就可以开车了</p>
+<h2 id="客户端下载"><a href="#客户端下载" class="headerlink" title="客户端下载"></a>客户端下载</h2><p>V2RayNG android</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;github.com&#x2F;2dust&#x2F;v2rayNG&#x2F;releases</span><br></pre></td></tr></table></figure>
+
+<p>V2RayW Win</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;github.com&#x2F;Cenmrev&#x2F;V2RayW&#x2F;releases</span><br></pre></td></tr></table></figure>
+
+<p>V2RayN Win</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;github.com&#x2F;2dust&#x2F;v2rayN&#x2F;releases</span><br></pre></td></tr></table></figure>
+
+<p>V2RayX MAC</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;github.com&#x2F;Cenmrev&#x2F;V2RayX</span><br></pre></td></tr></table></figure>
+
+<h2 id="管理命令"><a href="#管理命令" class="headerlink" title="管理命令"></a>管理命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">v2ray info 查看 V2Ray 配置信息</span><br><span class="line"></span><br><span class="line">v2ray config 修改 V2Ray 配置</span><br><span class="line"></span><br><span class="line">v2ray link 生成 V2Ray 配置文件链接</span><br><span class="line"></span><br><span class="line">v2ray infolink 生成 V2Ray 配置信息链接</span><br><span class="line"></span><br><span class="line">v2ray qr 生成 V2Ray 配置二维码链接</span><br><span class="line"></span><br><span class="line">v2ray ss 修改 Shadowsocks 配置</span><br><span class="line"></span><br><span class="line">v2ray ssinfo 查看 Shadowsocks 配置信息</span><br><span class="line"></span><br><span class="line">v2ray ssqr 生成 Shadowsocks 配置二维码链接</span><br><span class="line"></span><br><span class="line">v2ray status 查看 V2Ray 运行状态</span><br><span class="line"></span><br><span class="line">v2ray start 启动 V2Ray</span><br><span class="line"></span><br><span class="line">v2ray stop 停止 V2Ray</span><br><span class="line"></span><br><span class="line">v2ray restart 重启 V2Ray</span><br><span class="line"></span><br><span class="line">v2ray log 查看 V2Ray 运行日志</span><br><span class="line"></span><br><span class="line">v2ray update 更新 V2Ray</span><br><span class="line"></span><br><span class="line">v2ray update.sh 更新 V2Ray 管理脚本</span><br><span class="line"></span><br><span class="line">v2ray uninstall 卸载 V2Ray</span><br></pre></td></tr></table></figure>
+
 <p><img src="../../../../images/linux.png" alt="linux"></p>
 
 		  
@@ -604,10 +627,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">R</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
               </li>
              
@@ -620,6 +639,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">R</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">分子对接</a>
               </li>
              
@@ -628,7 +651,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">计算生物学</a>
+                <a href="javascript:void(0)" class="js-tag color4">vmd</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">脚本</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -636,11 +663,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vmd</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">脚本</a>
+                <a href="javascript:void(0)" class="js-tag color1">计算生物学</a>
               </li>
              
               <li class="article-tag-list-item">
