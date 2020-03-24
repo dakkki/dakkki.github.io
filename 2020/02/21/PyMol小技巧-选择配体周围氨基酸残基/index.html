@@ -6,23 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>PyMol高质量作图案例一：transparency使用 | dakki</title>
+  <title>PyMol小技巧-选择配体周围氨基酸残基 | dakki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="transparency命令使用本案例使用transparency命令设定一个对象为半透明另一个对象不透明 12345678910load rec.pdbload egf.pdbshow surface, recshow surface, egfset surface_color, magenta, egfset cartoon_color, magenta, egfset surface_col">
+  <meta name="description" content="用命令来选择配体周围氨基酸残基： 12345678#ligand为选择配体的名字select ligand，resn x#设置为红色color red， ligand#配体5埃范围内的残基select 5A， byres ligand around 5show sticks, 5Acolor yellow, 5A">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PyMol高质量作图案例一：transparency使用">
-<meta property="og:url" content="http://yoursite.com/2020/02/21/PyMol%E9%AB%98%E8%B4%A8%E9%87%8F%E4%BD%9C%E5%9B%BE%E6%A1%88%E4%BE%8B%E4%B8%80%EF%BC%9Atransparency%20-%20%E5%89%AF%E6%9C%AC/index.html">
+<meta property="og:title" content="PyMol小技巧-选择配体周围氨基酸残基">
+<meta property="og:url" content="http://yoursite.com/2020/02/21/PyMol%E5%B0%8F%E6%8A%80%E5%B7%A7-%E9%80%89%E6%8B%A9%E9%85%8D%E4%BD%93%E5%91%A8%E5%9B%B4%E6%B0%A8%E5%9F%BA%E9%85%B8%E6%AE%8B%E5%9F%BA/index.html">
 <meta property="og:site_name" content="dakki">
-<meta property="og:description" content="transparency命令使用本案例使用transparency命令设定一个对象为半透明另一个对象不透明 12345678910load rec.pdbload egf.pdbshow surface, recshow surface, egfset surface_color, magenta, egfset cartoon_color, magenta, egfset surface_col">
-<meta property="og:image" content="http://yoursite.com/images/pymol-transparency.png">
+<meta property="og:description" content="用命令来选择配体周围氨基酸残基： 12345678#ligand为选择配体的名字select ligand，resn x#设置为红色color red， ligand#配体5埃范围内的残基select 5A， byres ligand around 5show sticks, 5Acolor yellow, 5A">
 <meta property="og:image" content="http://yoursite.com/images/PyMol.png">
 <meta property="article:published_time" content="2020-02-21T08:43:05.224Z">
-<meta property="article:modified_time" content="2020-02-21T07:48:07.123Z">
+<meta property="article:modified_time" content="2020-03-24T08:25:24.309Z">
 <meta property="article:author" content="dakki">
-<meta property="article:tag" content="脚本模板">
 <meta property="article:tag" content="PyMol">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/pymol-transparency.png">
+<meta name="twitter:image" content="http://yoursite.com/images/PyMol.png">
   
     <link rel="alternative" href="/atom.xml" title="dakki" type="application/atom+xml">
   
@@ -214,19 +212,19 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-PyMol高质量作图案例一：transparency - 副本" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-PyMol小技巧-选择配体周围氨基酸残基" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      PyMol高质量作图案例一：transparency使用
+      PyMol小技巧-选择配体周围氨基酸残基
     </h1>
   
 
         
-        <a href="/2020/02/21/PyMol%E9%AB%98%E8%B4%A8%E9%87%8F%E4%BD%9C%E5%9B%BE%E6%A1%88%E4%BE%8B%E4%B8%80%EF%BC%9Atransparency%20-%20%E5%89%AF%E6%9C%AC/" class="archive-article-date">
+        <a href="/2020/02/21/PyMol%E5%B0%8F%E6%8A%80%E5%B7%A7-%E9%80%89%E6%8B%A9%E9%85%8D%E4%BD%93%E5%91%A8%E5%9B%B4%E6%B0%A8%E5%9F%BA%E9%85%B8%E6%AE%8B%E5%9F%BA/" class="archive-article-date">
   	<time datetime="2020-02-21T08:43:05.224Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
 </a>
         
@@ -236,10 +234,9 @@
       
 		  
 		  
-  	        <h3 id="transparency命令使用"><a href="#transparency命令使用" class="headerlink" title="transparency命令使用"></a>transparency命令使用</h3><p>本案例使用<code>transparency</code>命令设定一个对象为半透明另一个对象不透明</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">load rec.pdb</span><br><span class="line">load egf.pdb</span><br><span class="line">show surface, rec</span><br><span class="line">show surface, egf</span><br><span class="line">set surface_color, magenta, egf</span><br><span class="line">set cartoon_color, magenta, egf</span><br><span class="line">set surface_color, white, rec</span><br><span class="line">set transparency,0.55, egf</span><br><span class="line">set bg_rgb,white</span><br><span class="line">ray 1000, 1000</span><br></pre></td></tr></table></figure>
+  	        <p>用命令来选择配体周围氨基酸残基：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#ligand为选择配体的名字</span><br><span class="line">select ligand，resn x</span><br><span class="line">#设置为红色</span><br><span class="line">color red， ligand</span><br><span class="line">#配体5埃范围内的残基</span><br><span class="line">select 5A， byres ligand around 5</span><br><span class="line">show sticks, 5A</span><br><span class="line">color yellow, 5A</span><br></pre></td></tr></table></figure>
 
-<p><img src="../../../../images/pymol-transparency.png" alt="pymol-transparency"></p>
 <p><img src="../../../../images/PyMol.png" alt="R"></p>
 
 		  
@@ -253,10 +250,6 @@
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">脚本模板</a>
-        		</li>
-      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">PyMol</a>
         		</li>
@@ -314,7 +307,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/21/PyMol%E9%AB%98%E8%B4%A8%E9%87%8F%E4%BD%9C%E5%9B%BE%E6%A1%88%E4%BE%8B%E4%B8%80%EF%BC%9Atransparency%20-%20%E5%89%AF%E6%9C%AC/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/21/PyMol%E5%B0%8F%E6%8A%80%E5%B7%A7-%E9%80%89%E6%8B%A9%E9%85%8D%E4%BD%93%E5%91%A8%E5%9B%B4%E6%B0%A8%E5%9F%BA%E9%85%B8%E6%AE%8B%E5%9F%BA/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -380,7 +373,7 @@
 <script src="https://billts.site/js/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "PyMol高质量作图案例一：transparency使用",
+  id: "PyMol小技巧-选择配体周围氨基酸残基",
   owner: 'dakkki',
   repo: 'dakkki.github.io',
   oauth: {
@@ -517,11 +510,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
+                <a href="javascript:void(0)" class="js-tag color2">R</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">R</a>
+                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -533,15 +526,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">计算机技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">分子对接</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">ZDOCK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">计算生物学</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">药物设计</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -553,11 +550,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">药物设计</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">计算生物学</a>
+                <a href="javascript:void(0)" class="js-tag color1">计算机技术</a>
               </li>
             
             <div class="clearfix"></div>
