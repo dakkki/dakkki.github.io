@@ -6,22 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Pandas之Timestamp、Period、Timedelta介绍 | dakki</title>
+  <title>Archives: 2020/4 | dakki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="加载pandas和numpy库： 12import pandas as pdimport numpy as np  一、时间点TimestampTimestamp是从Python标准库的datetime类继承过来的，表示时间轴上的一个时刻。它提供了方便的时区转换功能。 调用Timestamp.now()获取当前时间，但注意的是，它是不包含时区信息的本地时间。 12now&#x3D;pd.Timestamp.">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Pandas之Timestamp、Period、Timedelta介绍">
-<meta property="og:url" content="http://yoursite.com/2020/02/25/Python%E5%AD%A6%E4%B9%A0-Pandas%E4%B9%8BTimestamp%E3%80%81Period%E3%80%81Timedelta%E4%BB%8B%E7%BB%8D/index.html">
+  <meta name="description" content="😯😯">
+<meta property="og:type" content="website">
+<meta property="og:title" content="dakki">
+<meta property="og:url" content="http://yoursite.com/archives/2020/04/index.html">
 <meta property="og:site_name" content="dakki">
-<meta property="og:description" content="加载pandas和numpy库： 12import pandas as pdimport numpy as np  一、时间点TimestampTimestamp是从Python标准库的datetime类继承过来的，表示时间轴上的一个时刻。它提供了方便的时区转换功能。 调用Timestamp.now()获取当前时间，但注意的是，它是不包含时区信息的本地时间。 12now&#x3D;pd.Timestamp.">
-<meta property="og:image" content="http://yoursite.com/images/pandas1.png">
-<meta property="article:published_time" content="2020-02-25T12:53:07.529Z">
-<meta property="article:modified_time" content="2020-02-27T08:20:55.424Z">
+<meta property="og:description" content="😯😯">
 <meta property="article:author" content="dakki">
-<meta property="article:tag" content="Python">
-<meta property="article:tag" content="Pandas">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/pandas1.png">
   
     <link rel="alternative" href="/atom.xml" title="dakki" type="application/atom+xml">
   
@@ -213,277 +207,61 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Python学习-Pandas之Timestamp、Period、Timedelta介绍" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Pandas之Timestamp、Period、Timedelta介绍
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/04/06/%E4%BD%BF%E7%94%A8sed%E5%AF%B9%E6%96%87%E6%9C%AC%E8%BF%9B%E8%A1%8C%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/" class="archive-article-date">
+  	<time datetime="2020-04-06T06:42:44.220Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-06</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/04/06/%E4%BD%BF%E7%94%A8sed%E5%AF%B9%E6%96%87%E6%9C%AC%E8%BF%9B%E8%A1%8C%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/">使用sed对文本进行增删改查</a>
     </h1>
   
 
-        
-        <a href="/2020/02/25/Python%E5%AD%A6%E4%B9%A0-Pandas%E4%B9%8BTimestamp%E3%80%81Period%E3%80%81Timedelta%E4%BB%8B%E7%BB%8D/" class="archive-article-date">
-  	<time datetime="2020-02-25T12:53:07.529Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-		  
-		  
-  	        <p>加载pandas和numpy库：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br></pre></td></tr></table></figure>
-
-<h1 id="一、时间点Timestamp"><a href="#一、时间点Timestamp" class="headerlink" title="一、时间点Timestamp"></a>一、时间点Timestamp</h1><p>Timestamp是从Python标准库的datetime类继承过来的，表示时间轴上的一个时刻。它提供了方便的时区转换功能。</p>
-<p>调用Timestamp.now()获取当前时间，但注意的是，它是不包含时区信息的本地时间。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">now=pd.Timestamp.now()</span><br><span class="line">now</span><br></pre></td></tr></table></figure>
-
-<p>代码结果：</p>
-<p>代码结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Timestamp(<span class="string">'2018-03-17 22:15:15.504010'</span>)</span><br></pre></td></tr></table></figure>
-
-
-<p>调用.tz_localize()转换为指定时区的当前时间<br>下面的+0800表示东八区的时间</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">now_shanghai=now.tz_localize(<span class="string">"Asia/Shanghai"</span>)</span><br><span class="line">now_shanghai</span><br></pre></td></tr></table></figure>
-
-
-<p>代码结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Timestamp(<span class="string">'2018-03-17 22:15:15.504010+0800'</span>, tz=<span class="string">'Asia/Shanghai'</span>)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pytz</span><br><span class="line">pytz.common_timezones</span><br></pre></td></tr></table></figure>
-
-<p>代码结果：</p>
-<p>代码结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">'Africa/Abidjan'</span>, <span class="string">'Africa/Accra'</span>, <span class="string">'Africa/Addis_Ababa'</span>, <span class="string">'Africa/Algiers'</span>, <span class="string">'Africa/Asmara'</span>, <span class="string">'Africa/Bamako'</span>, <span class="string">'Africa/Bangui'</span>, <span class="string">'Africa/Banjul'</span>, <span class="string">'Africa/Bissau'</span>, <span class="string">'Africa/Blantyre'</span>, <span class="string">'Africa/Brazzaville'</span>, <span class="string">'Africa/Bujumbura'</span>, <span class="string">'Africa/Cairo'</span>, 。。。</span><br><span class="line"><span class="meta">... </span></span><br><span class="line"><span class="string">'US/Alaska'</span>, <span class="string">'US/Arizona'</span>, <span class="string">'US/Central'</span>, <span class="string">'US/Eastern'</span>, <span class="string">'US/Hawaii'</span>, <span class="string">'US/Mountain'</span>, <span class="string">'US/Pacific'</span>, <span class="string">'UTC'</span>]</span><br></pre></td></tr></table></figure>
-
-
-<p>调用Timestamp()创建任意时间点：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pd.Timestamp(<span class="string">'2018-03-16 21:01:34'</span>)</span><br></pre></td></tr></table></figure>
-
-<p>代码结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Timestamp(<span class="string">'2018-03-16 21:01:34'</span>)</span><br></pre></td></tr></table></figure>
-
-<h1 id="二、时间段Period"><a href="#二、时间段Period" class="headerlink" title="二、时间段Period"></a>二、时间段Period</h1><p>Period表示一个标准的时间段。例如某年、某月、某日、某小时等。时间的长短由freq决定。</p>
-<p>调用pd.Period.now()获得包含当前时间的时间段：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">now_day=pd.Period.now(freq=<span class="string">"D"</span>)</span><br><span class="line">now_day</span><br></pre></td></tr></table></figure>
-
-<p>代码结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Period(<span class="string">'2018-03-16'</span>, <span class="string">'D'</span>)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">now_hour=pd.Period.now(freq=<span class="string">"H"</span>)</span><br><span class="line">now_hour</span><br></pre></td></tr></table></figure>
-
-<p>代码结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Period(<span class="string">'2018-03-16 21:00'</span>, <span class="string">'H'</span>)</span><br></pre></td></tr></table></figure>
-
-
-<p>获取freq的选值</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandas.tseries.frequencies._period_code_map.keys()</span><br></pre></td></tr></table></figure>
-
-<p>代码结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dict_keys([<span class="string">'A-DEC'</span>, <span class="string">'A-JAN'</span>, <span class="string">'A-FEB'</span>, <span class="string">'A-MAR'</span>, <span class="string">'A-APR'</span>, <span class="string">'A-MAY'</span>, <span class="string">'A-JUN'</span>, <span class="string">'A-JUL'</span>, <span class="string">'A-AUG'</span>, <span class="string">'A-SEP'</span>, <span class="string">'A-OCT'</span>, <span class="string">'A-NOV'</span>, <span class="string">'Q-DEC'</span>, <span class="string">'Q-JAN'</span>, <span class="string">'Q-FEB'</span>, <span class="string">'Q-MAR'</span>, <span class="string">'Q-APR'</span>, <span class="string">'Q-MAY'</span>, <span class="string">'Q-JUN'</span>, <span class="string">'Q-JUL'</span>, <span class="string">'Q-AUG'</span>, <span class="string">'Q-SEP'</span>, <span class="string">'Q-OCT'</span>, <span class="string">'Q-NOV'</span>, <span class="string">'M'</span>, <span class="string">'W-SUN'</span>, <span class="string">'W-MON'</span>, <span class="string">'W-TUE'</span>, <span class="string">'W-WED'</span>, <span class="string">'W-THU'</span>, <span class="string">'W-FRI'</span>, <span class="string">'W-SAT'</span>, <span class="string">'B'</span>, <span class="string">'D'</span>, <span class="string">'H'</span>, <span class="string">'T'</span>, <span class="string">'S'</span>, <span class="string">'L'</span>, <span class="string">'U'</span>, <span class="string">'N'</span>, <span class="string">'Q'</span>, <span class="string">'A'</span>, <span class="string">'W'</span>, <span class="string">'C'</span>])</span><br></pre></td></tr></table></figure>
-
-
-<p>获取Period对象的终点和起点</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">now_day.start_time</span><br></pre></td></tr></table></figure>
-
-<p>代码结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Timestamp(<span class="string">'2018-03-16 00:00:00'</span>)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">now_day.end_time</span><br></pre></td></tr></table></figure>
-
-<p>代码结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Timestamp(<span class="string">'2018-03-16 23:59:59.999999999'</span>)</span><br></pre></td></tr></table></figure>
-
-<h1 id="三、时间间隔Timedetla"><a href="#三、时间间隔Timedetla" class="headerlink" title="三、时间间隔Timedetla"></a>三、时间间隔Timedetla</h1><p>通过调用pd.Timedelta()之间创建时间间隔Timedelta对象：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">td=pd.Timedelta(weeks=<span class="number">2</span>,days=<span class="number">10</span>,hours=<span class="number">12</span>,minutes=<span class="number">2.4</span>,seconds=<span class="number">10.3</span>)</span><br><span class="line">td</span><br></pre></td></tr></table></figure>
-
-<p>代码结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Timedelta(<span class="string">'24 days 12:02:34.300000'</span>)</span><br></pre></td></tr></table></figure>
-
-
-<p>Timedelta对象有属性：weeks、days、seconds、milliseconds、microseconds和nanoseconds等：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">print(td.days)</span><br><span class="line">print(td.seconds)</span><br><span class="line">print(td.microseconds)</span><br><span class="line">print(td.nanoseconds)</span><br></pre></td></tr></table></figure>
-
-<p>代码结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">24</span></span><br><span class="line"><span class="number">43354</span></span><br><span class="line"><span class="number">300000</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="四、三者之间的转换"><a href="#四、三者之间的转换" class="headerlink" title="四、三者之间的转换"></a>四、三者之间的转换</h1><p>调用Timestamp对象的to_period()方法将时间点转换为包含该时间点的时间段：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">now.to_period(<span class="string">"H"</span>)</span><br></pre></td></tr></table></figure>
-
-<p>代码结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Period(<span class="string">'2018-03-16 21:00'</span>, <span class="string">'H'</span>)</span><br></pre></td></tr></table></figure>
-
-
-<p>将两个时间点相减得到时间间隔Timedelta对象：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nation_day=pd.Timestamp(<span class="string">"2018-10-1"</span>)</span><br><span class="line">td1=nation_day-pd.Timestamp.now()</span><br><span class="line">td1</span><br></pre></td></tr></table></figure>
-
-<p>代码结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Timedelta(<span class="string">'198 days 02:13:36.767126'</span>)</span><br></pre></td></tr></table></figure>
-
-
-<p>时间点和时间间隔之间可以进行加减运算：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nation_day+pd.Timedelta(<span class="string">"20 days 10:20:30"</span>)</span><br></pre></td></tr></table></figure>
-
-<p>代码结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Timestamp(<span class="string">'2018-10-21 10:20:30'</span>)</span><br></pre></td></tr></table></figure>
-
-<p><img src="../../../../images/pandas1.png" alt="R"></p>
-
-		  
-      
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Pandas</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/25/Python%E5%AD%A6%E4%B9%A0-Pandas%E4%B9%8BTimestamp%E3%80%81Period%E3%80%81Timedelta%E4%BB%8B%E7%BB%8D/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2020/02/25/Python%E5%AD%A6%E4%B9%A0-Pandas%E5%9F%BA%E7%A1%80/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Pandas基础
-        
-      </div>
-    </a>
   
   
-    <a href="/2020/02/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%EF%BC%9A2016%E5%B9%B4%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E6%B0%91%E6%84%8F%E8%B0%83%E6%9F%A5%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1(Numpy%E8%BD%BD%E5%85%A5%E6%95%B0%E6%8D%AE%E9%83%A8%E5%88%86)/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">数据分析实战案例：2016年美国总统大选民意调查数据统计(Numpy载入数据部分)</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-  <!-- 《添加版权声明 -->
-  
-  <!-- 添加版权声明》 -->
-  
+    
 
-  
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
-<script src="https://billts.site/js/gitment.js"></script>
-<script>
-var gitment = new Gitment({
-  id: "Pandas之Timestamp、Period、Timedelta介绍",
-  owner: 'dakkki',
-  repo: 'dakkki.github.io',
-  oauth: {
-    client_id: '8b6559b847fd562cdba3',
-    client_secret: '70ec7e8e65b48f8e56081ce19f54b16e80b0969e',
-  },
-})
-gitment.render('gitment-ctn')
-</script>
-  
 
           </div>
         </div>
@@ -508,8 +286,8 @@ gitment.render('gitment-ctn')
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
